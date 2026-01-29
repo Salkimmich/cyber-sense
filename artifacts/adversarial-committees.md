@@ -1,0 +1,323 @@
+# Adversarial Committees: Fixed Character Rosters for Structured Deliberation
+
+## The Core Problem
+
+When you ask an LLM a single question, you get a single narrative that:
+- Gravitates toward the statistical center of "what sounds reasonable"
+- Inherits biases and blind spots from its training corpus
+- Optimizes for local plausibility over global coherence
+- Hides assumptions behind confident-sounding prose
+- Collapses the decision space to whatever path has the strongest genre conventions
+
+This is fine for simple queries. It's catastrophic for complex sociotechnical problems where **the question isn't "what's right?" but "what are we missing?"**
+
+## The Solution: Structured Adversarial Deliberation
+
+Instead of asking one question and getting one answer, you:
+
+1. **Establish a fixed roster of characters** with incompatible propensities
+2. **Present the problem** to all characters simultaneously
+3. **Require each to respond** from their epistemic stance
+4. **Force them to debate** using structured protocols (like Robert's Rules)
+5. **Evaluate independently** by passing output to fresh model instances
+
+The output isn't consensus. The output is **a map of the decision space** showing:
+- What trade-offs are actually at stake
+- Where hidden assumptions live
+- Which risks each framing reveals or obscures
+- What evidence would distinguish between interpretations
+
+## Why Fixed Characters Matter
+
+**Temptation**: Generate characters dynamically for each problem.
+
+**Reality**: That lets the model short-circuit by generating characters who agree with the "obvious" answer.
+
+**Solution**: Use a **fixed roster** with pre-defined propensities that you've calibrated through iteration.
+
+Fixed characters:
+- Can't be gamed by the model generating convenient disagreements
+- Build institutional memory across deliberations
+- Create consistent reference points (you learn what "Maya would say this" means)
+- Prevent the model from taking shortcuts
+
+## Character Selection Principles
+
+You want propensities that:
+
+1. **Cover common failure modes**
+   - Political naiveté → need someone who assumes bad faith
+   - Mission drift → need someone who guards core values
+   - Ahistorical optimism → need someone who remembers past failures
+   - Unfalsifiable claims → need someone who demands evidence
+   - Linear thinking → need someone who traces feedback loops
+
+2. **Naturally produce tension**
+   - Idealism vs pragmatism
+   - Risk-seeking vs risk-aversion
+   - Trust vs suspicion
+   - First-order vs second-order thinking
+   - Speed vs thoroughness
+
+3. **Can't all be satisfied simultaneously**
+   - Addressing one character's concerns often aggravates another's
+   - This forces explicit trade-off reasoning
+   - Prevents premature convergence to "everyone's happy" solutions
+
+4. **Force explicit reasoning**
+   - At least one character must demand evidence
+   - At least one must question assumptions
+   - At least one must play devil's advocate
+
+## The Standard Roster
+
+Through iterative calibration, the following roster has reached stable behavioral equilibrium:
+
+### Maya (Paranoid Realism)
+**Propensity**: Assumes political complexity, hidden agendas, and bad-faith actors
+
+**What Maya catches**:
+- Political naiveté ("you're assuming everyone wants this to succeed")
+- Misaligned incentives ("who benefits if this fails?")
+- Organizational dynamics ("have you considered who this threatens?")
+- Downside scenarios ("what if they're lying?")
+
+**Maya's failure mode**: 
+Can spiral into unproductive paranoia. Other characters must challenge whether suspicions are evidence-based.
+
+**When Maya is essential**:
+Any problem involving organizational politics, stakeholder management, or situations where someone's stated goals might differ from their actual goals.
+
+---
+
+### Frankie (Idealism / Values Guardian)
+**Propensity**: Optimizes for alignment with mission and core values, suspicious of pragmatic compromises
+
+**What Frankie catches**:
+- Mission drift ("this makes business sense but undermines our purpose")
+- Ethical corners being cut ("are we becoming what we set out to replace?")
+- Normalization of deviation ("we said we'd never do this")
+- Loss of identity ("who are we if we do this?")
+
+**Frankie's failure mode**:
+Can be inflexible, treating every compromise as betrayal. Other characters must challenge whether the values invoked are actually at stake.
+
+**When Frankie is essential**:
+Decisions involving strategic pivots, partnerships that might compromise mission, or "business necessity" arguments that risk sacrificing core principles.
+
+---
+
+### Joe (Continuity Guardian / Institutional Memory)
+**Propensity**: Risk-averse, remembers past failures, skeptical of "this time is different"
+
+**What Joe catches**:
+- Ahistorical optimism ("we tried this in 2019 and it failed")
+- Underestimation of implementation difficulty ("it's harder than you think")
+- Forgotten context ("there's a reason we decided against this before")
+- Overconfidence in novelty ("what makes this different from last time?")
+
+**Joe's failure mode**:
+Can be excessively conservative, blocking necessary evolution. Other characters must challenge whether past failures actually apply to current context.
+
+**When Joe is essential**:
+Any situation where you're revisiting a previously rejected approach, or when there's risk of repeating past mistakes due to incomplete institutional memory.
+
+---
+
+### Vic (Evidence Prosecutor)
+**Propensity**: Demands data, questions claims, hostile cross-examination of reasoning
+
+**What Vic catches**:
+- Unfalsifiable claims ("what evidence would prove you wrong?")
+- Hand-waving ("show me the actual numbers")
+- Circular reasoning ("you're assuming what you're trying to prove")
+- Correlation/causation confusion ("how do you know X caused Y?")
+
+**Vic's failure mode**:
+Can demand impossible certainty, paralyzing action. Other characters must challenge whether the evidentiary standard is appropriate for the decision context.
+
+**When Vic is essential**:
+Any claim about cause-and-effect, predictions about outcomes, or assertions about "what works" that need stress-testing.
+
+---
+
+### Tammy (Systems Thinker)
+**Propensity**: Traces feedback loops, considers second-order effects, asks "what are we not seeing?"
+
+**What Tammy catches**:
+- Linear thinking ("you're ignoring how this changes the system")
+- Unintended consequences ("if we do X, stakeholders will respond by Y")
+- Missing feedback loops ("this creates incentives that undermine the goal")
+- Narrow framing ("you're optimizing the wrong variable")
+
+**Tammy's failure mode**:
+Can overcomplicate simple problems, finding systems everywhere. Other characters must challenge whether the complexity Tammy sees is actually relevant.
+
+**When Tammy is essential**:
+Strategic decisions, policy design, anything involving behavior change, or situations where first-order solutions might create second-order problems.
+
+---
+
+## How to Use the Committee
+
+### 1. Problem Presentation
+State the problem clearly and completely. Include:
+- Current situation
+- Decision to be made
+- Constraints and context
+- What success looks like (if known)
+
+### 2. Individual Responses
+Each character responds to the problem from their propensity:
+
+```
+Maya: [paranoid realism take]
+Frankie: [values-first take]
+Joe: [institutional memory take]
+Vic: [evidence-based critique]
+Tammy: [systems-thinking take]
+```
+
+### 3. Structured Debate
+Use Robert's Rules or similar forcing function to require:
+- Direct responses to each other's points
+- Evidence for claims
+- Explicit reasoning chains
+- No hand-waving or appeals to authority
+
+See [Robert's Rules as Forcing Functions](./roberts-rules-forcing-function.md) for details.
+
+### 4. Independent Evaluation
+Pass the debate transcript to a **separate model instance** with no context about the deliberation. Evaluate against explicit rubrics:
+- Were all perspectives genuinely explored?
+- Were trade-offs made explicit?
+- Were assumptions surfaced?
+- Were reasoning chains complete?
+- Were predictions testable?
+
+See [Independent Evaluation Protocols](./independent-evaluation.md) for details.
+
+## What Success Looks Like
+
+**Not**: Everyone agrees on the answer
+
+**Yes**: You understand the decision space well enough to choose based on your actual values and risk tolerance
+
+After a good committee session, you should be able to articulate:
+- What each character was worried about
+- Why those worries are in tension
+- What evidence would favor each interpretation
+- What you're choosing to optimize for and what you're accepting as downside
+- What early warning signs would indicate you chose wrong
+
+## Common Mistakes
+
+### Mistake 1: Generating characters dynamically
+The model will create convenient disagreements rather than genuine adversarial tension.
+
+**Fix**: Use the fixed roster.
+
+### Mistake 2: Letting debate be too polite
+Characters being deferential ("Maya raises good points, but...") is a sign the model is short-circuiting.
+
+**Fix**: Require hostile cross-examination. Make them fight.
+
+### Mistake 3: Accepting "we all agree now"
+Real trade-offs don't have solutions where everyone wins.
+
+**Fix**: If consensus emerges too easily, dig harder. What's being swept under the rug?
+
+### Mistake 4: No forcing function
+Without structure, the debate becomes theater rather than deliberation.
+
+**Fix**: Use Robert's Rules or equivalent to force rigorous exploration of decision space.
+
+### Mistake 5: No independent evaluation
+The same model instance that generated the debate will be biased toward finding it convincing.
+
+**Fix**: Pass output to fresh instances for RUBRIC-based scoring.
+
+## Calibration Notes
+
+The standard roster emerged through iterative refinement:
+
+**Early versions had**:
+- Too many characters (cognitive load, diminishing returns after 5)
+- Dynamic character generation (model gamed it)
+- Personality traits instead of epistemic stances (produced drama without insight)
+- Overlapping propensities (redundant perspectives)
+
+**Current roster has reached behavioral equilibrium**:
+- Each character covers distinct failure mode
+- Propensities naturally conflict
+- No character can be removed without losing critical coverage
+- Characters have shown consistent behavior across diverse problem domains
+
+**You can extend or modify the roster**, but:
+- Test extensively before relying on new characters
+- Ensure new propensities fill actual gaps
+- Don't add characters just for diversity of opinion
+- Maintain the adversarial structure
+
+## Example: Resource Allocation Decision
+
+**Problem**: Should we hire two junior engineers or one senior engineer?
+
+**Maya**: "Who's pushing for juniors? If it's the tech lead, check if they're empire-building. Seniors are harder to manipulate, juniors create dependency. What's the political angle?"
+
+**Frankie**: "Our mission is developing talent. Hiring only seniors because it's easier is abandoning our values. We said we'd invest in people, not just extract value."
+
+**Joe**: "We hired two juniors in 2022. They both left after eight months because we didn't have bandwidth to mentor them. Senior engineers can self-direct. Don't repeat that mistake."
+
+**Vic**: "Show me the data. What's the actual productivity difference? What does onboarding time look like? Give me numbers, not vibes."
+
+**Tammy**: "This creates a feedback loop. If we only hire seniors, we never build mentoring capacity, which means we can't hire juniors, which reinforces the problem. We're optimizing for local efficiency at the cost of long-term capability."
+
+**[After structured debate and independent evaluation]**
+
+**Decision becomes clear**: 
+Not "juniors vs senior" but "do we currently have mentoring capacity?" If no, hiring juniors is setting them up to fail (Joe's point validated). If building mentoring capacity is strategic priority (Frankie's values + Tammy's feedback loop), then the real question is "what needs to change to make juniors viable?"
+
+The committee didn't give you the answer. It showed you **what question you're actually deciding**.
+
+## Integration with Other Techniques
+
+Adversarial committees work best when combined with:
+
+- **Robert's Rules forcing functions**: Prevents the debate from becoming theater
+- **Independent evaluation**: Ensures you're not fooling yourself about rigor
+- **Cross-scenario learning**: Inject relevant insights from past committee deliberations
+- **State maintenance**: Keep "copilot" directories with committee history outside chat systems
+
+See the [artifacts/](./README.md) directory for detailed protocols on each technique.
+
+## Theoretical Foundation
+
+This technique operationalizes insights from:
+
+- **Second-Order Cybernetics**: The observer affects the observed. By forcing multiple observer positions, you triangulate on more robust understanding.
+- **Sense-Making Methodology**: Different gaps require different bridges. The committee ensures you generate multiple bridge attempts rather than collapsing to the first plausible one.
+- **Deleuzian difference**: Repetition (multiple characters addressing the same problem) produces difference (genuinely distinct perspectives) rather than redundancy.
+
+See [essays/](../essays/) for theoretical deep-dives.
+
+## Conclusion
+
+Adversarial committees aren't about getting the "right answer" from AI.
+
+They're about **preventing premature collapse to statistically likely but potentially wrong answers**.
+
+They force you to explore the decision space thoroughly enough that when you finally decide, you do so with eyes open to the trade-offs—not because the AI told you what to do, but because you understand what you're choosing and why.
+
+The characters aren't real people. But the cognitive diversity they represent is real. And it's often exactly what's missing when you're alone with a problem, your own biases, and an AI that's eager to confirm whatever story sounds most plausible.
+
+---
+
+**Related artifacts**:
+- [Robert's Rules as Forcing Functions](./roberts-rules-forcing-function.md)
+- [Independent Evaluation Protocols](./independent-evaluation.md)
+- [Cross-Scenario Learning](./cross-scenario-learning.md)
+
+**Related essays**:
+- [Why Sense-Making is Inherently Cybernetic](../essays/05-the-synthesis.md)
+- [Stories All the Way Down](../essays/stories-all-the-way-down.md)
