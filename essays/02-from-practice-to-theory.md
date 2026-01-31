@@ -1,4 +1,4 @@
-# From Practice to Theory: How We Got Here
+# From Practice to Theory: How We Got Here; The Game within a Game
 
 We didn't start with critical theory. We started with broken agents and a rigged game.
 
@@ -47,6 +47,8 @@ Here lies the core insight: **We cannot change the laws of the model (the Outer 
 The Outer Game is rigged by entropy; the stochastic imps will always try to pull the narrative toward the most generic, least-resistant path. If you just ask the model for an answer, you are playing the Outer Game, and the house eventually wins. It will give you the most probable, least interesting, statistically average answer.
 
 But we can construct a **Game Within the Game**.
+
+This is exactly what biological life does to cheat entropy (locally, anyway).
 
 ## Rediscovering the Committee
 
