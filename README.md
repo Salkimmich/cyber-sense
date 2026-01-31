@@ -12,6 +12,10 @@ Each generation of computing hardware forced us to adapt how we think about expr
 
 As always, the computers won't completely solve the problems for us, but they can amplify our capacity to think them through.
 
+[From Practice to Theory](./essays/02-from-practice-to-theory.md) tells the
+story of how these practices grew, and the theory used to guide their
+development.
+
 The essay [Stories All the Way Down](./essays/stories-all-the-way-down.md) explains
 how everything is a story, how stories are a way to deal with wicked problems,
 and how we are constantly editing and re-editing the stories we tell ourselves
