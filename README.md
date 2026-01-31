@@ -1,6 +1,6 @@
 # Cyber-Sense: Towards methodology for narrative computing
 
-> "We've never had narrative engines powerful enough to make this methodology necessary before."
+> If the tool is a narrative engine, treating it like a calculator is a category error. You don't get mad at a car for not flying; you learn to drive.
 
 ## Narrative computing
 
@@ -20,6 +20,8 @@ about the world.
 ## What is Cyber-sense?
 
 **Cyber-Sense** is a methodology for working with AI systems as collaborative sense-making partners rather than oracles that deliver answers.
+
+> "We've never had narrative engines powerful enough to make this methodology necessary before."
 
 Large Language Models are not databases. They are not logic engines. They are **narrative generators** - storytelling machines operating through what we call "the pachinko of stored literature." This changes everything about how we should work with them.
 
