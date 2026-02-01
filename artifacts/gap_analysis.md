@@ -11,7 +11,6 @@ The following files are linked in existing documentation but do not exist in the
 The following documents are listed in `essays/README.md` or `artifacts/README.md` as "coming soon" or otherwise planned but are currently missing:
 
 ### Essays
-*   `narrative-computing-history.md`: Narrative Computing as Historical Progression
 *   `pachinko-of-stored-literature.md`: The Pachinko of Stored Literature
 *   `charts-on-a-manifold.md`: Charts on a Manifold
 *   `eigenforms-narrative-convergence.md`: Eigenforms and Narrative Convergence

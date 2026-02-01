@@ -176,7 +176,7 @@ If you're not convinced this is necessary:
 
 ## Supplementary Essays
 
-### [Narrative Computing as Historical Progression](./narrative-computing-history.md) *(coming soon)*
+### [Narrative Computing as Historical Progression](./narrative-computing-history.md)
 
 Deeper dive into the historical progression from numeric to symbolic to narrative computing, with detailed examples of how each paradigm shift required new methodologies and disciplines.
 
