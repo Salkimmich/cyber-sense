@@ -104,7 +104,7 @@ If you're not convinced this is necessary:
 
 ---
 
-### [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md) *(coming soon)*
+### [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md)
 
 **Second-order cybernetics**: First-order cybernetics studies systems and feedback loops as if you're outside looking in. Second-order recognizes: the observer is part of the observed system.
 
@@ -122,7 +122,7 @@ If you're not convinced this is necessary:
 
 ---
 
-### [The Synthesis: Why Sense-Making is Inherently Cybernetic](./05-the-synthesis.md) *(coming soon)*
+### [The Synthesis: Why Sense-Making is Inherently Cybernetic](./05-the-synthesis.md)
 
 **The integration**: Sense-Making says gaps produce bridges that change situations. Cybernetics says observation changes state. Deleuze says repetition produces difference. These aren't separate ideas—they're the same phenomenon at different scales.
 
@@ -140,7 +140,7 @@ If you're not convinced this is necessary:
 
 ---
 
-### [Deleuzian Foundations: Difference and Repetition](./06-deleuze-difference-repetition.md) *(coming soon)*
+### [Deleuzian Foundations: Difference and Repetition](./06-deleuze-difference-repetition.md)
 
 **Deleuze's insight**: Repetition doesn't reproduce the same. It produces difference. Each iteration of "asking the same question" explores new territory because the asking changes both questioner and question.
 

@@ -11,9 +11,6 @@ The following files are linked in existing documentation but do not exist in the
 The following documents are listed in `essays/README.md` or `artifacts/README.md` as "coming soon" or otherwise planned but are currently missing:
 
 ### Essays
-*   `04-cybernetics-and-observation.md`: Cybernetics and the Observer Problem
-*   `05-the-synthesis.md`: The Synthesis: Why Sense-Making is Inherently Cybernetic
-*   `06-deleuze-difference-repetition.md`: Deleuzian Foundations: Difference and Repetition
 *   `narrative-computing-history.md`: Narrative Computing as Historical Progression
 *   `pachinko-of-stored-literature.md`: The Pachinko of Stored Literature
 *   `charts-on-a-manifold.md`: Charts on a Manifold
@@ -33,5 +30,4 @@ The following documents are listed in `essays/README.md` or `artifacts/README.md
 ### Artifacts & Examples
 *   `examples/strategic-pivot-example.md`: Strategic Pivot Example
 *   `examples/failure-case-example.md`: Failure Case Example
-*   `troubleshooting.md`: Common Problems and Solutions
 *   `integration-with-moollm.md`: Integration with MOOLLM

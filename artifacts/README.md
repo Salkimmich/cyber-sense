@@ -53,7 +53,7 @@ Collection of annotated deliberation transcripts showing:
 
 ## Troubleshooting
 
-### [Common Problems and Solutions](./troubleshooting.md) *(coming soon)*
+### [Troubleshooting Guide](./troubleshooting.md) - Common failure modes and fixes
 Diagnostic guide for when things go wrong:
 - "My committee just agrees with everything"
 - "Characters are too polite / not adversarial enough"
