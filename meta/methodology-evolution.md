@@ -160,7 +160,7 @@ This document captures key insights about how the Cyber-Sense methodology evolve
 ### Jan 29, 2026: Foundation Session
 
 **Created**:
-- Repository structure (README, essays/, artifacts/, copilot/)
+- Repository structure (README, essays/, artifacts/, agent/)
 - 3 foundational essays
 - 9 core artifacts (4 techniques + 5 templates)
 - Handoff prompt template

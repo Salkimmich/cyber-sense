@@ -253,7 +253,7 @@ Based on the convergence of their findings and your methodology gaps, here are t
 
 #### 8. Map Cyber-Sense to MOOLLM Architecture
 
-**What**: Translate your current ad-hoc patterns (copilot directories, committee transcripts, cross-scenario lessons) into MOOLLM's formal infrastructure (Rooms, Cards, Files).
+**What**: Translate your current ad-hoc patterns (agent directories, committee transcripts, cross-scenario lessons) into MOOLLM's formal infrastructure (Rooms, Cards, Files).
 
 **Why**: The paper studies emergent behavior; MOOLLM offers formal architecture. Combining them could systematize what's currently improvised.
 

@@ -209,10 +209,10 @@ Use this structure for the handoff document:
 
 ## Where to Place It
 
-Save as: `/copilot/handoff-[YYYY-MM-DD].md`
+Save as: `/agent/handoff-[YYYY-MM-DD].md`
 
 This location:
-- Signals its purpose (it's in copilot directory, not main docs)
+- Signals its purpose (it's in agent directory, not main docs)
 - Is timestamped (multiple sessions can accumulate handoffs)
 - Will be found by successor looking for continuation context
 

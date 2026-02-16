@@ -287,7 +287,7 @@ Adversarial committees work best when combined with:
 - **Robert's Rules forcing functions**: Prevents the debate from becoming theater
 - **Independent evaluation**: Ensures you're not fooling yourself about rigor
 - **Cross-scenario learning**: Inject relevant insights from past committee deliberations
-- **State maintenance**: Keep "copilot" directories with committee history outside chat systems
+- **State maintenance**: Keep "agent" directories with committee history outside chat systems
 
 See the [artifacts/](./README.md) directory for detailed protocols on each technique.
 

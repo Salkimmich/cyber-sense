@@ -121,7 +121,7 @@ Boland's umwelt concept provides the theoretical framework: organisms construct 
 
 **The connection to Cyber-Sense**:
 
-- **Copilot directories** = material substrate of the umwelt. Files persist across sessions. State management transcends conversation boundaries.
+- **Agent directories** = material substrate of the umwelt. Files persist across sessions. State management transcends conversation boundaries.
 
 - **Character propensities** = conceptual structure of the umwelt. Maya, Frankie, Joe, Vic, and Tammy aren't just personas—they're stable interpretive positions that structure the deliberative space.
 
@@ -129,7 +129,7 @@ Boland's umwelt concept provides the theoretical framework: organisms construct 
 
 - **The methodology itself** = the persistent umwelt. The adversarial committee structure, parliamentary procedures, and evaluation rubrics constitute a stable interpretive environment within which specific deliberations are episodes.
 
-This reframes what the copilot directory actually is: not just "file storage" or "external memory," but the material foundation of a constructed interpretive environment. The umwelt that makes sense-making possible.
+This reframes what the agent directory actually is: not just "file storage" or "external memory," but the material foundation of a constructed interpretive environment. The umwelt that makes sense-making possible.
 
 **Why this matters practically**: You're not trying to make AI "remember" things. You're constructing a persistent interpretive environment that transcends any individual AI instance. The structure persists even as the instances that operate within it come and go.
 
@@ -263,7 +263,7 @@ How do you maintain the umwelt across these discontinuities?
 
 **Solution components**:
 
-**Copilot directories** provide material persistence. Files exist outside conversation boundaries. State management transcends any individual session. The umwelt's material substrate persists even when no AI instance is active.
+**Agent directories** provide material persistence. Files exist outside conversation boundaries. State management transcends any individual session. The umwelt's material substrate persists even when no AI instance is active.
 
 **Character propensities** provide conceptual continuity. Maya's dispositional skepticism, Frankie's systems thinking, Joe's pragmatic focus—these persist as stable interpretive positions independent of which AI instance embodies them in any given session.
 
@@ -273,7 +273,7 @@ How do you maintain the umwelt across these discontinuities?
 
 **The innovation**: Treating the methodology itself as the umwelt that persists, not just the content. 
 
-The adversarial committee structure is the stable interpretive environment. Specific deliberations are episodes within it. New AI instances can enter this environment and immediately operate effectively because the structure shapes their interpretation—they inhabit the umwelt that persists in the copilot directory and the methodological procedures.
+The adversarial committee structure is the stable interpretive environment. Specific deliberations are episodes within it. New AI instances can enter this environment and immediately operate effectively because the structure shapes their interpretation—they inhabit the umwelt that persists in the agent directory and the methodological procedures.
 
 This is materially different from trying to give an AI "memory" of past conversations. You're not trying to make the medium remember. You're constructing a persistent interpretive environment that transcends the medium's limitations.
 
@@ -308,7 +308,7 @@ The discipline parallels traditional engineering in rigor while differing fundam
 **What Cyber-Sense provides**:
 - Practical methodology (adversarial committees, character propensities, parliamentary procedures)
 - Anti-collapse mechanisms (forcing functions that prevent premature convergence)
-- State management (copilot directories, cross-scenario learning, persistent umwelt)
+- State management (agent directories, cross-scenario learning, persistent umwelt)
 - Validation protocols (RUBRIC scoring, independent evaluation, adversarial review)
 
 **Together they form**: A complete narrative engineering discipline with rigorous theoretical foundations and reproducible practical techniques.

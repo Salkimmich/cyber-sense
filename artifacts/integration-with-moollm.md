@@ -21,7 +21,7 @@ What MOOLLM provides that ad-hoc approaches lack:
 
 | Ad-Hoc Approach | MOOLLM Equivalent |
 |-----------------|-------------------|
-| Copilot directories with markdown files | First-class file objects with query capability |
+| agent directories with markdown files | First-class file objects with query capability |
 | "Use a fresh instance" (honor system) | Room isolation (OS-enforced) |
 | Copy-paste handoff documents into context | Automatic state persistence across sessions |
 | Hoping the model follows Robert's Rules | Protocol enforcement at system level |
@@ -243,7 +243,7 @@ For practitioners currently using Cyber-Sense without MOOLLM, migration can be i
 **Goal**: Eliminate manual handoff documents without changing workflow.
 
 **Changes**:
-- Copilot directory contents become MOOLLM file objects
+- agent directory contents become MOOLLM file objects
 - Handoff documents auto-generated from room state
 - Lesson library queryable rather than manually injected
 - Character calibrations persist automatically

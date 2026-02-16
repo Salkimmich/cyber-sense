@@ -247,13 +247,13 @@ The full cycle looks like:
 
 ## Practical Implementation
 
-### 1. Copilot Directories
+### 1. Agent Directories
 
 Because chat interfaces don't persist state well, maintain external storage:
 
 ```
 /project-workspace/
-├── copilot/
+├── agent/
 │   ├── current-deliberation/
 │   │   ├── transcript.md
 │   │   ├── minutes.md

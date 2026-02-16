@@ -45,7 +45,7 @@
 
 ### Hidden Value (Joe)
 
-- **Handoff insights**: Valuable lessons about methodology evolution buried in `/copilot/` directory
+- **Handoff insights**: Valuable lessons about methodology evolution buried in `/agent/` directory
 - **Learning trajectory**: Real mistakes and dead ends documented but not visible to users
 - **Institutional memory**: Development story could build trust if surfaced
 
