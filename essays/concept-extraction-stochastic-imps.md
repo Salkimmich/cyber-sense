@@ -1,5 +1,7 @@
 # Concept Extraction: The Stochastic Imps of Happenstance
 
+> **Working document** — This is an intermediate analysis artifact, not a polished essay. It extracts theoretical concepts from [The Stochastic Imps of Happenstance](./the-stochastic-imps-of-happenstance.md) to facilitate their translation into formal essays. It's included in the repository as an example of the concept-extraction process itself.
+
 This document summarizes the core theoretical concepts embedded in the narrative essay "The Stochastic Imps of Happenstance" to facilitate their translation into formal essays.
 
 ## Core Thesis

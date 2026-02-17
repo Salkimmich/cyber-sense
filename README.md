@@ -31,6 +31,7 @@ Large Language Models are not databases. They are not logic engines. They are **
 *   **Practitioners** working with AI on complex sociotechnical problems
 *   **Researchers** exploring human-AI collaboration
 *   **Anyone frustrated** with shallow AI outputs who suspects there's a better way
+*   **Skeptics** wondering if this is just prompt engineering theater → [start here](essays/README.md#for-skeptics-show-me-why-this-matters)
 *   **Theorists** interested in narrative computing, cybernetics, or sense-making
 
 ## Getting started
@@ -42,9 +43,11 @@ Large Language Models are not databases. They are not logic engines. They are **
 **Want the theory?**
 *   Read the [Essays](essays/) in order, starting with [From Practice to Theory](./essays/02-from-practice-to-theory.md).
 *   For the formal pipeline algebra, see [Decorated Texts](./palgebra/decorated-texts.md).
+*   For curated reading paths by audience (Practitioner, Theorist, Skeptic), see the [Essays directory](essays/README.md#reading-paths).
 
 **Want practical techniques?**
-*   Jump straight to the [Artifacts](artifacts/).
+*   Start with the [Quick Start Guide](artifacts/quick-start-guide.md) — your first committee deliberation in 30 minutes.
+*   Then explore the full [Artifacts](artifacts/) directory.
 
 ## Why does this matter?
 
@@ -126,6 +129,8 @@ This repository documents the latter.
 ## Status
 
 This is early-stage documentation of an emerging methodology. The techniques described here have been refined through iterative practice and have reached stable behavioral equilibrium. The theoretical framework is being formalized.
+
+**Evidence base**: The adversarial committee technique has empirical support from research on multi-agent reasoning — see [Societies of Thought](essays/societies-of-thought-synthesis.md) for a synthesis of findings from Google, UChicago, and the Santa Fe Institute showing that perspective-switching and conversational scaffolding improve reasoning quality. The theoretical foundations draw on established work in sense-making methodology (Dervin), second-order cybernetics (von Foerster, Bateson), and process philosophy (Deleuze). What remains to be validated is the specific combination of techniques and their calibration across problem domains.
 
 Feedback, questions, and contributions welcome.
 

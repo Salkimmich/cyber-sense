@@ -758,3 +758,36 @@ partially codified. What remains:
   existing framework but to find where existing theory provides
   composition laws we can use and where our "soft type" phenomenon
   requires extension.
+
+## Connections to practice
+
+The artifacts in this repository instantiate several concepts from
+this formalism, even where they don't use the algebraic vocabulary:
+
+- **[Evaluation Rubrics](../artifacts/evaluation-rubrics-reference.md)**
+  are the rubric half of our soft types `(template, rubric)`. The
+  five-rubric scoring system (reasoning completeness, adversarial
+  rigor, assumption surfacing, evidence standards, trade-off
+  explicitness) is a membership function that grades how well a
+  deliberation inhabits its type.
+
+- **[Independent Evaluation](../artifacts/independent-evaluation.md)**
+  is an enrichment morphism — scores are added to the deliberation's
+  metadata without changing the deliberation text itself. The
+  evaluator writes to the `scores.*` namespace; the payload passes
+  through unchanged.
+
+- **[Adversarial Committees](../artifacts/adversarial-committees.md)**
+  are transformation morphisms — they consume a problem statement and
+  produce a deliberation transcript. The committee technique is the
+  *work* of the pipeline.
+
+- **Human review gates** appear throughout the methodology as
+  collapse operators — the moment where graded uncertainty (scores,
+  confidence bands, conditions) resolves into a binary decision:
+  proceed or iterate.
+
+- **The [`/string-diagram` skill](../.claude/skills/string-diagram/SKILL.md)**
+  converts resource equations into Mermaid diagrams — the operational
+  bridge between the term language and the visual language described
+  in this essay.

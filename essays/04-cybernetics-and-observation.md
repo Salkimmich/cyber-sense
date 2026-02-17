@@ -102,3 +102,14 @@ Deleuze provides the "What."
 And Dervin provides the "Why."
 
 Together, they form the Cyber-Sense machine.
+
+---
+
+**Related artifacts**:
+- [Adversarial Committees](../artifacts/adversarial-committees.md) — the loop that forces divergence
+- [Robert's Rules as Forcing Functions](../artifacts/roberts-rules-forcing-function.md) — the governor that prevents the loop from spinning too fast
+- [Independent Evaluation Protocols](../artifacts/independent-evaluation.md) — breaking the hermeneutic circle
+
+**Related essays**:
+- [The Synthesis](./05-the-synthesis.md) — how the three frameworks (Dervin, cybernetics, Deleuze) compose
+- [Deleuzian Foundations](./06-deleuze-difference-repetition.md) — the "What" that completes the machine

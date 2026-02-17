@@ -106,5 +106,9 @@ The goal isn't to get the machine to be right. It's to get the system (You + Mac
 
 ---
 
-**Next Steps in Theory**:
-Now that we understand the system is a loop, we must understand the "physics" of that loop. How does observation collapse probability? That is the subject of [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md).
+**Next in theory**: [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md) — the "physics" of the loop.
+
+**Related artifacts**:
+- [Adversarial Committees](../artifacts/adversarial-committees.md) — the loop that forces divergence (practical form of the synthesis)
+- [Independent Evaluation Protocols](../artifacts/independent-evaluation.md) — breaking the hermeneutic circle by introducing an outside observer
+- [Decorated Texts](../palgebra/decorated-texts.md) — the formal algebra for composing these loops into pipelines

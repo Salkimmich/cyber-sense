@@ -387,3 +387,8 @@ Kim, J., Lai, S., Scherrer, N., Agüera y Arcas, B., & Evans, J. (2025). Reasoni
 ---
 
 *"Surprise markers in discourse signal information gain. Adversarial committees inject entropy. Robert's Rules prevents premature collapse. The methodology operates on sound information-theoretic principles—now we have the neural evidence to prove it."*
+
+**Related artifacts**:
+- [Adversarial Committees](../artifacts/adversarial-committees.md) — the technique this research validates
+- [Character Propensity Reference](../artifacts/character-propensity-reference.md) — the roster whose design this research informs
+- [Independent Evaluation Protocols](../artifacts/independent-evaluation.md) — the "outside observer" pattern supported by this evidence

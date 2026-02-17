@@ -1,0 +1,35 @@
+# Repository Gap Analysis
+
+## 1. Dangling Links
+The following files are linked in existing documentation but do not exist in the repository:
+
+(None — previously broken links to `pachinko-of-stored-literature.md` and `charts-on-a-manifold.md` in essays/README.md have been marked as "coming soon")
+
+
+
+## 2. Planned Documents
+The following documents are listed in `essays/README.md` or `artifacts/README.md` as "coming soon" or otherwise planned but are currently missing:
+
+### Essays (not yet written, partially covered by existing material)
+*   `pachinko-of-stored-literature.md`: The Pachinko of Stored Literature — metaphor previewed in Essays 01 and Stories All the Way Down
+*   `charts-on-a-manifold.md`: Charts on a Manifold — metaphor developed in Stories All the Way Down and formalized in Decorated Texts
+*   `eigenforms-narrative-convergence.md`: Eigenforms and Narrative Convergence — concept introduced in Essay 04
+*   `editor-role-publishing.md`: The Editor's Role: Publishing Stories to Reality
+
+### Essays (not yet written, corresponding artifacts exist)
+*   `adversarial-committees-epistemic.md`: Adversarial Committees as Epistemic Triangulation — practical technique in `artifacts/adversarial-committees.md`, empirical backing in `societies-of-thought-synthesis.md`
+*   `roberts-rules-information-theory.md`: Robert's Rules as Information-Theoretic Constraint — practical technique in `artifacts/roberts-rules-forcing-function.md`
+*   `independent-evaluation-training.md`: Independent Evaluation as Adversarial Training — practical protocol in `artifacts/independent-evaluation.md`
+*   `cross-scenario-institutional-memory.md`: Cross-Scenario Learning as Institutional Memory — practical template in `artifacts/cross-scenario-learning.md`
+
+### Essays (not yet written, no existing coverage)
+*   `when-methodology-fails.md`: When This Methodology Fails
+*   `formalization-problem.md`: The Formalization Problem
+*   `cognitive-overhead-diminishing-returns.md`: Cognitive Overhead and Diminishing Returns
+*   `cybernetic-hermeneutics.md`: Cybernetic Hermeneutics: A New Discipline?
+*   `narrative-computing-extended-mind.md`: Narrative Computing and the Extended Mind
+*   `epistemology-collaborative-sensemaking.md`: The Epistemology of Collaborative Sense-Making
+
+### Artifacts & Examples
+*   `examples/strategic-pivot-example.md`: Strategic Pivot Example
+*   `examples/failure-case-example.md`: Failure Case Example

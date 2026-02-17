@@ -4,6 +4,8 @@
 
 This document provides detailed reference material for each member of the standard adversarial committee roster. Use this to understand when each character is essential, how they interact, what their failure modes are, and how to calibrate their behavior.
 
+**Character origins**: These five characters originated in [The Stochastic Imps of Happenstance](../essays/the-stochastic-imps-of-happenstance.md), where they appear as members of "Tilt Sound Collective" — a sound studio crew navigating AI trust, entropy, and collaborative decision-making. Their epistemic stances and interaction dynamics emerged from that narrative. This reference operationalizes the characters for committee use.
+
 ## Quick Reference Card
 
 | Character | Core Propensity | Key Question | Catches | Failure Mode |

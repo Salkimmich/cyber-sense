@@ -210,13 +210,13 @@ If you're not convinced this is necessary:
 
 Deeper dive into the historical progression from numeric to symbolic to narrative computing, with detailed examples of how each paradigm shift required new methodologies and disciplines.
 
-### [The Pachinko of Stored Literature](./pachinko-of-stored-literature.md)
+### The Pachinko of Stored Literature *(coming soon)*
 
-Extended metaphor: LLMs as pachinko machines where tokens drop through a maze of statistical weights, occasionally producing useful outputs. Why this framing helps and when it breaks down.
+Extended metaphor: LLMs as pachinko machines where tokens drop through a maze of statistical weights, occasionally producing useful outputs. Why this framing helps and when it breaks down. (Preview: the metaphor appears in [Essay 01](./01-why-narrative-engines-change-everything.md) and throughout [Stories All the Way Down](./stories-all-the-way-down.md).)
 
-### [Charts on a Manifold](./charts-on-a-manifold.md)
+### Charts on a Manifold *(coming soon)*
 
-Mathematical formalism: treating complex problems as manifolds requiring multiple coordinate charts (stories), none sufficient alone, overlapping at boundaries. Connection to ensemble methods and multi-model inference.
+Mathematical formalism: treating complex problems as manifolds requiring multiple coordinate charts (stories), none sufficient alone, overlapping at boundaries. Connection to ensemble methods and multi-model inference. (Preview: the charts-on-manifold metaphor is developed in [Stories All the Way Down](./stories-all-the-way-down.md) and formalized in the [Decorated Texts](../palgebra/decorated-texts.md) essay.)
 
 ### [Eigenforms and Narrative Convergence](./eigenforms-narrative-convergence.md) *(coming soon)*
 
@@ -226,23 +226,31 @@ Technical deep-dive: how recursive self-reference in sense-making produces stabl
 
 Extended exploration of the analyst-as-editor metaphor. How curating which stories get "published to reality" is the fundamental act of decision-making in narrative computing.
 
+## Transcripts and Worked Examples
+
+### [Scene 1: Bootstrapping Cybernetic Hermeneutics](./scene-1.md)
+
+A committee debate transcript (Kaelen/Elena/Silas) that uses the adversarial committee methodology to develop the theoretical synthesis itself. The methodology applied to its own foundations — three characters representing Entropy, Constraint, and Integration argue about how cybernetics, sense-making, and Deleuzian philosophy compose into a coherent framework.
+
+**Read this if**: You want to see the methodology in action on a theoretical problem, or want a concrete example of how adversarial debate produces synthesis rather than just compromise.
+
 ## Applied Essays
 
-### [Adversarial Committees as Epistemic Triangulation](./adversarial-committees-epistemic.md) *(coming soon)*
+### Adversarial Committees as Epistemic Triangulation *(coming soon)*
 
-Why having characters with incompatible propensities isn't theater—it's rigorous epistemic practice. Connection to adversarial processes in courts, peer review, red teams.
+Why having characters with incompatible propensities isn't theater—it's rigorous epistemic practice. Connection to adversarial processes in courts, peer review, red teams. (Meanwhile: the practical technique is documented in [Adversarial Committees](../artifacts/adversarial-committees.md) and the empirical evidence is in [Societies of Thought](./societies-of-thought-synthesis.md).)
 
-### [Robert's Rules as Information-Theoretic Constraint](./roberts-rules-information-theory.md) *(coming soon)*
+### Robert's Rules as Information-Theoretic Constraint *(coming soon)*
 
-Technical explanation: how procedural overhead introduces computational constraints that prevent collapse to high-probability (but potentially wrong) outputs. Shannon's information theory meets parliamentary procedure.
+Technical explanation: how procedural overhead introduces computational constraints that prevent collapse to high-probability (but potentially wrong) outputs. Shannon's information theory meets parliamentary procedure. (Meanwhile: the practical technique is documented in [Robert's Rules as Forcing Functions](../artifacts/roberts-rules-forcing-function.md).)
 
-### [Independent Evaluation as Adversarial Training](./independent-evaluation-training.md) *(coming soon)*
+### Independent Evaluation as Adversarial Training *(coming soon)*
 
-How the generator/evaluator split creates adversarial training loop that drives quality improvement over time. Connection to GANs and other adversarial machine learning techniques.
+How the generator/evaluator split creates adversarial training loop that drives quality improvement over time. Connection to GANs and other adversarial machine learning techniques. (Meanwhile: the practical protocol is documented in [Independent Evaluation Protocols](../artifacts/independent-evaluation.md) with full rubrics in [Evaluation Rubrics Reference](../artifacts/evaluation-rubrics-reference.md).)
 
-### [Cross-Scenario Learning as Institutional Memory](./cross-scenario-institutional-memory.md) *(coming soon)*
+### Cross-Scenario Learning as Institutional Memory *(coming soon)*
 
-How lesson extraction and injection creates persistent knowledge structures that survive conversation amnesia. Organizational learning theory meets AI collaboration.
+How lesson extraction and injection creates persistent knowledge structures that survive conversation amnesia. Organizational learning theory meets AI collaboration. (Meanwhile: the practical template is in [Cross-Scenario Learning](../artifacts/cross-scenario-learning.md) and [Lesson Extraction Template](../artifacts/lesson-extraction-template.md).)
 
 ## Critiques and Limitations
 

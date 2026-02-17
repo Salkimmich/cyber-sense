@@ -229,3 +229,12 @@ Rosen, Robert. 1991. *Life Itself: A Comprehensive Inquiry into the Nature, Orig
 Shanahan, Murray. 2024. "Talking About Large Language Models." arXiv:2212.03551.
 
 von Foerster, Heinz. 2003. *Understanding Understanding: Essays on Cybernetics and Cognition*. Springer.
+
+---
+
+**Related essays**:
+- [Why Narrative Engines Change Everything](./01-why-narrative-engines-change-everything.md) — the concise version of this historical argument
+- [Narrative Engineering](./07-bolands-narrative-engineering.md) — Boland's independent convergence on similar conclusions
+
+**Related artifacts**:
+- [Integration with MOOLLM](../artifacts/integration-with-moollm.md) — how Cyber-Sense maps onto an infrastructure designed for narrative computing

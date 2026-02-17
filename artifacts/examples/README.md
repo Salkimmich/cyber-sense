@@ -11,6 +11,7 @@ This directory will contain a collection of annotated deliberation transcripts t
 
 ### Completed Files
 *   [`hiring-decision-example.md`](./hiring-decision-example.md): Complete transcript of a hiring deliberation.
+*   [`scene-1.md`](../../essays/scene-1.md) *(in essays/)*: Committee debate bootstrapping the theoretical synthesis — the methodology applied to its own foundations.
 
 ### Planned Files
 *   `strategic-pivot-example.md`: Product strategy decision example.

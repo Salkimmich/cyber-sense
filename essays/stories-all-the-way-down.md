@@ -212,4 +212,14 @@ That part is still yours.
 
 ---
 
+**Related essays**:
+- [Why Narrative Engines Change Everything](./01-why-narrative-engines-change-everything.md) — the paradigm shift that makes narrative methodology necessary
+- [The Stochastic Imps of Happenstance](./the-stochastic-imps-of-happenstance.md) — the adversarial storytelling technique in narrative form
+
+**Related artifacts**:
+- [Adversarial Committees](../artifacts/adversarial-committees.md) — the practical technique for generating competing stories
+- [Decorated Texts](../palgebra/decorated-texts.md) — formalizes the "charts on a manifold" idea as typed pipeline operations
+
+---
+
 *For everyone navigating complexity with imperfect tools, building things that matter, and trying not to mistake the map for the territory.*

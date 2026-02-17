@@ -739,6 +739,13 @@ Besides, it's Saturday night. Let's have fun.
 
 ---
 
+**Related materials**:
+- [Character Propensity Reference](../artifacts/character-propensity-reference.md) — operational manual for the five characters introduced in this essay
+- [Adversarial Committees](../artifacts/adversarial-committees.md) — the committee technique in practical form
+- [Quick Start Guide](../artifacts/quick-start-guide.md) — run your first committee deliberation in 30 minutes
+
+---
+
 *For everyone playing games within games, building things that matter, and trying to do it without losing themselves in the process.*
 
 *For Sal, wherever he is. May he find what he's looking for.*
