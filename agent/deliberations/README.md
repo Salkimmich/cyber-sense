@@ -1,6 +1,6 @@
 # Deliberation Records
 
-This directory holds **directory-structured deliberation records** produced by the cyber-sense committee and review skills. Each subdirectory is one deliberation, named by a topic slug (e.g. `microservices-migration`, `is-author-crackpot`). The **example/** subdirectory contains minimal template files showing the 00–04 structure; real runs create a new directory per topic (e.g. `agent/deliberations/my-topic/`).
+This directory holds **directory-structured deliberation records** produced by the cyber-sense committee skill. Every `/committee [topic]` run creates a new subdirectory here (e.g. `agent/deliberations/microservices-adoption/`) and writes 00–04 files; there is no single-file or inline-only output. The review skill reads from these directories and can write `04-evaluation.yml`. The **example/** subdirectory contains minimal template files showing the 00–04 structure.
 
 ## Structure (per deliberation)
 

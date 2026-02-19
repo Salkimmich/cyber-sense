@@ -259,7 +259,7 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
 ## 6. Implementation Order
 
 1. **Create** `agent/deliberations/` and optionally `agent/deliberations/README.md` describing the 00–04 structure.
-2. **Add** to committee skill: section “Deliberation record directory,” phased file production (00 → 01 → 02 → 03), topic-slug rule, self-contained path references. Keep inline mode as default; directory output opt-in.
+2. **Add** to committee skill: section “Deliberation record directory,” phased file production (00 → 01 → 02 → 03), topic-slug rule, self-contained path references. Every run writes the directory; no inline-only mode.
 3. **Implement** 00–03 file generation in committee flows (or in agent instructions that call the skill): charter from topic, fixed roster + convening, deliberation content into 02, resolution into 03.
 4. **Add** to review skill: “Review from deliberation directory” (read 02-deliberation.md [+ 00-charter.yml]), optional write of transcript review into 04-evaluation.yml (or 04-transcript-review), self-contained paths.
 5. **Define** who produces resolution-only 04 (e.g. separate “evaluator” step or a second pass of the review skill with only charter + resolution). Document in review skill or in `agent/deliberations/README.md`.

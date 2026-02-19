@@ -3,9 +3,9 @@ name: committee
 description: >
   Run an adversarial committee deliberation using the fixed 5-character roster
   (Maya, Frankie, Joe, Vic, Tammy) to explore decision spaces, surface assumptions,
-  and map trade-offs. Use when the user types '/committee [topic]' or asks for a
-  committee deliberation. Use '/committee record [topic]' to save output as a
-  directory under agent/deliberations/ (00–04 files).
+  and map trade-offs. Every run writes a deliberation record to
+  agent/deliberations/<topic-slug>/ (00–04 files). Use when the user types
+  '/committee [topic]' or asks for a committee deliberation.
 ---
 
 # Committee Deliberation Skill
@@ -92,17 +92,15 @@ When two allied characters agree too quickly, push the opposing character harder
 
 When invoked, the skill:
 
-1. **Initializes the committee** with all 5 characters and their propensities
-2. **Presents the problem** as stated by the user (or prompts for clarification if vague)
-3. **Generates initial perspectives** from each character (2-3 paragraphs each)
-4. **Facilitates structured debate** with characters responding to each other
-5. **Surfaces key insights**:
-   - What assumptions were made explicit
-   - What trade-offs were identified
-   - What evidence requirements emerged
-   - What disagreements reveal about the problem structure
+1. **Creates the deliberation record directory** `agent/deliberations/<topic-slug>/` and writes 00-charter.yml, 01-roster.yml, 01-convening.md (from the topic and fixed roster).
+2. **Initializes the committee** with all 5 characters and their propensities
+3. **Presents the problem** as stated by the user (or prompts for clarification if vague)
+4. **Generates initial perspectives** from each character (2-3 paragraphs each)
+5. **Facilitates structured debate** with characters responding to each other
+6. **Writes 02-deliberation.md** (full transcript) and **03-resolution.yml** (decision, votes, summary).
+7. **Surfaces key insights** (optionally inline): assumptions, trade-offs, evidence requirements, decision space map, recommended next steps.
 
-The output is not consensus—it's a **map of the decision space** showing what's at stake, what's uncertain, and what different framings reveal or obscure.
+The canonical output is the **deliberation record directory** (00–04). The substance is not consensus—it's a **map of the decision space** showing what's at stake, what's uncertain, and what different framings reveal or obscure.
 
 ## Deliberation requirements
 
@@ -203,16 +201,6 @@ The skill should then:
 
 The skill recognizes sufficient context and proceeds directly to deliberation.
 
-### Deliberation record (directory output)
-```
-/committee record [topic]
-```
-or
-```
-/committee [topic] save to record
-```
-Create `agent/deliberations/<topic-slug>/` and write 00-charter.yml, 01-roster.yml, 01-convening.md, 02-deliberation.md, and 03-resolution.yml in order. Also deliver the decision space map inline. See "Deliberation record directory" above.
-
 ### Scoped invocation
 ```
 /committee quick [topic]
@@ -258,9 +246,9 @@ The committee skill can reference (all paths under cyber-sense only):
 - **Examples**: `artifacts/examples/` for precedent
 - **Deliberation record layout**: `agent/deliberations/README.md` and `agent/augmentation-plan.md` for the 00–04 directory structure
 
-## Deliberation record directory (opt-in)
+## Deliberation record directory (always)
 
-When the user requests **structured output** or **save to deliberation record** (e.g. `/committee record [topic]` or `/committee [topic] save to record`), write the deliberation into a dedicated directory instead of (or in addition to) the inline response. Default behavior remains inline-only unless the user opts in.
+Every committee run writes a deliberation record to a dedicated directory. There is no single-file or inline-only mode—the directory is the canonical output.
 
 **Location:** `agent/deliberations/<topic-slug>/`
 
@@ -286,7 +274,7 @@ When the user requests **structured output** or **save to deliberation record** 
 3. **After synthesis:**
    - **03-resolution.yml** — From Final Consensus and DECISION SPACE MAP / VERDICT. Structure: `resolution:` with `date` (YYYY-MM-DD), `topic`, `outcome` (PASSED | DEFERRED | NO_CONSENSUS), `decision` (one line), `summary` (paragraph), optional `details`, optional `implementation_plan` (list of action/description), `votes` (maya, frankie, joe, vic, tammy: YES | NO | ABSTAIN or conditional text), `signatures` (chair: "Committee (Cyber-Sense)", ratified_by: "User").
 
-**Backward compatibility:** If the user does *not* say "record", "save to record", or "structured output", produce only the inline deliberation as today; do not create or write to `agent/deliberations/`.
+After writing the record, you may summarize the decision space map (KEY TENSIONS, RECOMMENDED NEXT STEPS) inline for the user's convenience; the authoritative output remains the directory.
 
 **Reference:** Full schemas and rationale in `agent/augmentation-plan.md`; overview in `agent/deliberations/README.md`.
 

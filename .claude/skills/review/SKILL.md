@@ -3,9 +3,7 @@ name: review
 description: >
   Run an independent review of a committee deliberation transcript. Evaluates
   against the five core rubrics, cites specific transcript passages, and produces
-  actionable feedback. Use '/review' after a committee run or with a pasted
-  transcript; use '/review agent/deliberations/<topic-slug>' to review a
-  deliberation record and optionally write transcript_review to 04-evaluation.yml.
+  actionable feedback. Use '/review' after a committee run (deliberation is in agent/deliberations/<topic-slug>/) or with a pasted transcript; use '/review agent/deliberations/<topic-slug>' to review that record and optionally write transcript_review to 04-evaluation.yml.
 ---
 
 # Committee Review Skill
@@ -37,7 +35,7 @@ compensates by:
 - User types `/review` and pastes or attaches a transcript
 - User types `/review agent/deliberations/<topic-slug>` or "review the last deliberation record" — read transcript from that directory, optionally write transcript review into 04-evaluation.yml
 - User asks to "review the deliberation" or "evaluate the committee output"
-- After any `/committee` run (or committee record run), suggest: "Want me to run `/review` on this?"
+- After any `/committee` run, suggest: "Want me to run `/review` on this?" (the deliberation record is in agent/deliberations/<topic-slug>/)
 
 ## What the skill does
 
@@ -284,9 +282,9 @@ After any `/committee` deliberation, proactively suggest:
 
 > "Want me to run `/review` on this to check the quality? The independent evaluation can catch theatrical rigor that looks convincing but doesn't hold up."
 
-If the deliberation was saved to a record directory (`/committee record [topic]`), add:
+The committee always writes to `agent/deliberations/<topic-slug>/`. You can add:
 
-> "I can also evaluate the transcript and write the review to 04-evaluation.yml in that directory, or run a resolution-only evaluation (charter + resolution, no transcript)."
+> "I can evaluate the transcript and write the review to 04-evaluation.yml in that directory, or run a resolution-only evaluation (charter + resolution, no transcript)."
 
 This nudge is part of the cybernetic feedback loop — generator + evaluator in tension drives improvement.
 
