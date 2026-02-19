@@ -19,6 +19,7 @@ trade-offs, and blind spots.
 
 - User types `/committee [topic/question]`
 - User asks to "run a committee on [X]" or "deliberate on [Y]"
+- User asks for **remediation** (e.g. "committee respond to evaluation for agent/deliberations/&lt;topic-slug&gt;" or "/committee remediation agent/deliberations/&lt;topic-slug&gt;") when an evaluation scored below threshold and the committee should address the critique
 - Complex sociotechnical problems where single perspectives miss important angles
 - Decisions with competing values, unclear trade-offs, or political dimensions
 - Situations where "what are we missing?" matters more than "what's the answer?"
@@ -244,7 +245,7 @@ The committee skill can reference (all paths under cyber-sense only):
 - **Character propensity reference**: `artifacts/character-propensity-reference.md` for detailed character calibration
 - **Setup templates**: `artifacts/committee-setup-template.md` for advanced customization
 - **Examples**: `artifacts/examples/` for precedent
-- **Deliberation record layout**: `agent/deliberations/README.md` and `agent/augmentation-plan.md` for the 00–04 directory structure
+- **Deliberation record layout**: `agent/deliberations/README.md` and `agent/archive/augmentation-plan.md` for the 00–04 directory structure
 
 ## Deliberation record directory (always)
 
@@ -259,7 +260,7 @@ Every committee run writes a deliberation record to a dedicated directory. There
 1. **Before deliberation** (from topic + any user context):
    - **00-charter.yml** — `charter:` with `goal`, `context` (2–4 sentences), `success_criteria` (list), `exit_conditions` (list), `deliverable_format: "Resolution Artifact (YAML) + Decision Space Map"`.
    - **01-roster.yml** — Fixed 5-member roster: `roster:` with `committee_name: "Cyber-Sense Adversarial Committee"`, `size: 5`, `members:` list of `name`, `role`, `propensity` for Maya (devil's_advocate, paranoid_realism), Frankie (opportunity_scout, idealism), Joe (historian, continuity_guardian), Vic (evidence_checker, evidence_prosecutor), Tammy (systems_analyst, systems_thinking). No external `file:` references; character details stay in `artifacts/character-propensity-reference.md`.
-   - **01-convening.md** — Markdown: Date, Selection strategy (e.g. "Standard 5-member roster"), Rationale (why this roster: diversity, tensions, coverage), Composition notes (Maya vs Frankie, grounding from Joe/Vic, exploration from Tammy/Frankie), Outcome ("Committee convened with 5 members. See 01-roster.yml.").
+   - **01-convening.md** — Markdown: Date, Selection strategy (e.g. "Standard 5-member roster"), Rationale (why this roster: diversity, tensions, coverage), Composition notes (Maya vs Frankie, grounding from Joe/Vic, exploration from Tammy/Frankie), Outcome ("Committee convened with 5 members. See 01-roster.yml."). **Optional (evaluation feedback loop):** A short "Remediation parameters" section with **remediation_threshold** (default 13; pass if sum of five rubric scores ≥ this) and **max_remediation_rounds** (default 2), if this deliberation should use non-default values.
 
 2. **During/after deliberation:**
    - **02-deliberation.md** — Full transcript in this structure:
@@ -276,7 +277,20 @@ Every committee run writes a deliberation record to a dedicated directory. There
 
 After writing the record, you may summarize the decision space map (KEY TENSIONS, RECOMMENDED NEXT STEPS) inline for the user's convenience; the authoritative output remains the directory.
 
-**Reference:** Full schemas and rationale in `agent/augmentation-plan.md`; overview in `agent/deliberations/README.md`.
+**Reference:** Full schemas and rationale in `agent/archive/augmentation-plan.md`; overview in `agent/deliberations/README.md`.
+
+## Remediation mode (Committee respond to evaluation)
+
+When the user or workflow invokes the committee for **remediation** (e.g. "committee respond to evaluation for agent/deliberations/&lt;topic-slug&gt;" or "/committee remediation agent/deliberations/&lt;topic-slug&gt;" or "run a remediation round for this deliberation"):
+
+1. **Resolve the deliberation directory** (e.g. `agent/deliberations/<topic-slug>/`).
+2. **Read:** 00-charter.yml, 02-deliberation.md, and the **latest evaluation file** (04-evaluation-1.yml, or 06-evaluation-2.yml if the first remediation already ran, or 08-evaluation-3.yml if two remediations exist). From the evaluation file use `transcript_review`: rubric scores, biggest_gaps, recommendations.
+3. **Check:** If 05-remediation-1.md and 07-remediation-2.md already exist, do not run again (max 2 remediation rounds). Tell the user the deliberation has already had two remediation rounds.
+4. **Produce:**
+   - **Remediation file:** 05-remediation-1.md (or 07-remediation-2.md if 05 already exists). Content: frame the evaluation as a motion to recommit; for each recommendation in the evaluation, state accept / reject with reason / amend, and what the committee will add or change; then summarize the new round you will add.
+   - **Append to 02-deliberation.md:** A new section "## Response to evaluation (motion to recommit)" and "## Round 2: [topic]" (or "Round 3" if 07-remediation-2.md). Include the committee's point-by-point response and the new round of debate addressing the evaluator's recommendations.
+   - **Update 03-resolution.yml** if the resolution or consensus changed.
+5. **After writing:** Suggest running `/review` again on the directory; the review skill will write to 06-evaluation-2.yml (or 08-evaluation-3.yml).
 
 ## Customization options
 

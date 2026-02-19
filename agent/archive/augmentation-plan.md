@@ -1,8 +1,14 @@
 # Augmentation Plan: Committee and Review Skills with Directory-Structured Deliberation Records
 
+**Status:** Implemented. This plan is archived in `agent/archive/` for reference.
+
 **Goal:** Augment the cyber-sense committee and review skills so deliberation records follow the same directory structure as the MOOLLM debates (numeric-prefix files 00–04), while remaining **self-contained under the cyber-sense directory** and using only the **existing committee roster and artifacts**.
 
 **Reference:** `agent/investigation-report.md` (how the debate was conducted, what’s essential, what differs from current cyber-sense).
+
+---
+
+This plan also covers the **evaluation feedback loop** (remediation when score is below threshold); see §8. Previously there were two plan files (this one and `evaluation-feedback-loop-plan.md`); they are coalesced here: §1–7 = structure and skills, §8 = feedback loop, §9 = implementation status. The other file is now a stub pointing here.
 
 ---
 
@@ -212,7 +218,7 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
    - If the user does **not** request “structured output” or “save to deliberation record,” behavior remains: produce the same inline deliberation (phases 1–3 and output format as today). So existing `/committee [topic]` usage is unchanged. Committee always produces the directory (00–03); inline summary can still be offered, but the canonical record is the directory.
 
 6. **Documentation in skill**
-   - Add a short “Deliberation record directory” section describing the 00–04 layout and when it is used. Point to `agent/deliberations/` and `agent/augmentation-plan.md` (or a short `agent/deliberations/README.md` if added).
+   - Add a short “Deliberation record directory” section describing the 00–04 layout and when it is used. Point to `agent/deliberations/` and this file (or a short `agent/deliberations/README.md` if added).
 
 ---
 
@@ -251,8 +257,8 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
 - **agent/investigation-report.md** (done)  
   - Investigation summary; no external paths.
 
-- **agent/augmentation-plan.md** (this file)  
-  - Plan and file schemas; all paths relative to cyber-sense.
+- **agent/archive/augmentation-plan.md** (this file)  
+  - Plan and file schemas; all paths relative to cyber-sense. Implemented and archived.
 
 ---
 
@@ -275,3 +281,34 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
 - **References to MOOLLM or mg-moollm:** All documentation and paths stay under cyber-sense; the “same structure” is the numeric-prefix lifecycle (00–04), not shared files or repos.
 
 This plan makes the deliberation record a **first-class, directory-shaped artifact** under cyber-sense while keeping committee and review behavior and roster unchanged except for output layout and file I/O.
+
+---
+
+## 8. Evaluation feedback loop (remediation)
+
+When the independent evaluation scores a deliberation **below a configurable threshold**, the evaluation is sent back to the committee; the committee responds (remediation), then review runs again. **Locked-in design:**
+
+- **Score:** Sum of five rubric scores (0–15). **Threshold:** sum &lt; 13 (default) → trigger remediation. Overridable in **convening file** (01-convening.md). **Max 2 remediation rounds.**
+- **Artifacts:** First evaluation file is **04-evaluation-1.yml** (always numbered). After remediation: **05-remediation-1.md**, then **06-evaluation-2.yml**, then **07-remediation-2.md**, **08-evaluation-3.yml**, … (chronology index increments). Remediation = committee point-by-point response to evaluator recommendations; append new round to 02, update 03 if needed.
+- **Committee skill:** New mode "Committee respond to evaluation" / "remediation": inputs = 00, 02, latest evaluation file; output = 05-remediation-1.md (or 07-remediation-2.md), append to 02, update 03.
+- **Review skill:** Write to 04-evaluation-1.yml (first review), then 06-evaluation-2.yml, 08-evaluation-3.yml, … when loop has run. After writing, state that if sum &lt; threshold the user/workflow should invoke remediation; max 2 rounds.
+- **Convening file:** Can override `remediation_threshold` (default 13) and `max_remediation_rounds` (default 2). No need to duplicate in evaluation file.
+
+Full design narrative (schemes A vs B, motion to recommit) was in `evaluation-feedback-loop-plan.md`; that file is in this archive as a stub pointing here.
+
+---
+
+## 9. Implementation status
+
+| Item | Status | Notes |
+|------|--------|------|
+| Deliberations directory, README, example | Done | `agent/deliberations/`, README, example/ |
+| Committee: always directory, 00–03 | Done | Skill writes 00-charter, 01-roster, 01-convening, 02-deliberation, 03-resolution |
+| Review: from directory, write evaluation | Done | Reads 02 (+ 00, 01-convening); writes transcript_review to 04-evaluation-1.yml (or 06/08 when loop has run) |
+| First evaluation file named 04-evaluation-1 | Done | Skills write 04-evaluation-1.yml; is-author-crackpot renamed to 04-evaluation-1.yml |
+| Evaluation file: sum and threshold (13) | Done | Review skill documents sum (0–15), threshold 13, remediation trigger, max 2 rounds |
+| Committee: remediation mode | Done | "Committee respond to evaluation" / remediation mode; outputs 05-remediation-1.md, appends 02, updates 03 |
+| Convening: threshold/rounds override | Done | 01-convening may include Remediation parameters (remediation_threshold, max_remediation_rounds); README and committee skill updated |
+| Artifacts: feedback loop subsection | Done | independent-evaluation.md and artifacts/README.md updated |
+
+**Summary:** All items implemented. Deliberation records (00–04), evaluation feedback loop (remediation, 04-evaluation-1 naming, sum/threshold, convening overrides), and committee remediation mode are in place.

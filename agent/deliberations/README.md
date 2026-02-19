@@ -18,7 +18,7 @@ So the "real" type is the type name (charter, deliberation, …); the number is 
 |------|------|---------|
 | `00-charter.yml` | charter | Goal, context, success criteria, exit conditions, deliverable format |
 | `01-roster.yml` | roster | Fixed 5-member committee (Maya, Frankie, Joe, Vic, Tammy); roles and propensities |
-| `01-convening.md` | convening | Selection rationale, composition notes, outcome. Can override **remediation threshold** (default: sum ≥ 13) and **max remediation rounds** (default: 2) for this deliberation. |
+| `01-convening.md` | convening | Selection rationale, composition notes, outcome. Optional **Remediation parameters** (for the evaluation feedback loop): **remediation_threshold** (default 13; pass if sum of five rubric scores ≥ this), **max_remediation_rounds** (default 2). Add a short "Remediation parameters" section when this deliberation uses non-default values. |
 | `02-deliberation.md` | deliberation | Full transcript: opening statements, rounds, analyses, consensus, decision space map |
 | `03-resolution.yml` | resolution | Decision, summary, votes, implementation plan, signatures |
 | `04-evaluation-1.yml` | evaluation | First review: resolution-only evaluation and/or transcript review (rubric scores, verdict). **Always use a number** for the first evaluation file (04-evaluation-1.yml). |
@@ -34,7 +34,7 @@ Optional (when evaluation feedback loop runs): `05-remediation-1.md`, then `06-e
 
 All paths and references stay **under the cyber-sense repository**. Roster and character details come from `.claude/skills/committee/SKILL.md` and `artifacts/character-propensity-reference.md`; evaluation rubrics from `.claude/skills/review/SKILL.md` and `artifacts/evaluation-rubrics-reference.md`.
 
-See **agent/augmentation-plan.md** for full schemas and implementation details; **agent/investigation-report.md** for how this structure was derived.
+See **agent/archive/augmentation-plan.md** for full schemas and implementation details; **agent/investigation-report.md** for how this structure was derived.
 
 ## File formats: why YAML vs Markdown
 

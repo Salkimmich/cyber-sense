@@ -1,4 +1,4 @@
-# Phase 4: Evaluation
+# Phase 4: Evaluation (first review)
 # transcript_review: Independent evaluation of 02-deliberation.md (five rubrics)
 
 transcript_review:
@@ -14,6 +14,7 @@ transcript_review:
     evidence_standards: 2
     tradeoff_explicitness: 3
 
+  sum: 11
   aggregate_score: 2.2
 
   verdict: "Medium"
