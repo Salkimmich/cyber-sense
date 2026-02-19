@@ -44,6 +44,20 @@ This is essentially **adversarial training for narrative quality**:
 
 Over time, you learn what triggers low scores and calibrate your prompting to avoid those failure modes.
 
+## Evaluation Feedback Loop (Remediation)
+
+When the independent evaluation scores a deliberation **below a configurable threshold**, the evaluation is sent back to the committee. The committee responds to the critique (e.g. addresses recommendations, adds a round, revises synthesis) to raise scores. This is the **evaluation feedback loop**; the committee’s response is called **remediation**.
+
+**Mechanics (when using the committee and review skills with directory-structured records):**
+
+- **Score:** Sum of the five rubric scores (0–15). Each rubric is 0–3.
+- **Threshold:** Sum **&lt; 13** (default) → below bar → trigger remediation. The threshold is **overridable in the convening file** (parameters of how this debate will run).
+- **Trigger:** After the review skill writes an evaluation file (e.g. `04-evaluation-1.yml`), if **sum &lt; threshold**, the user or workflow invokes the committee to run a **remediation** round (“Committee respond to evaluation” for explanatory logs; “remediation” where brevity counts).
+- **Remediation:** Committee reads the charter, transcript, and latest evaluation; produces a point-by-point response in a **remediation** file (e.g. `05-remediation-1.md`) and appends a new round to the deliberation; may update the resolution. Then review runs again and writes the next evaluation file (e.g. `06-evaluation-2.yml`).
+- **Cap:** **Max 2 remediation rounds.** After that, stop even if still below threshold; document “improved but below bar.”
+
+See `agent/evaluation-feedback-loop-plan.md` for full design; `agent/deliberations/README.md` for file naming (04-evaluation-1, 05-remediation-1, 06-evaluation-2, …).
+
 ## Core Evaluation Rubrics
 
 Effective independent evaluation requires **explicit, measurable criteria**. Here are the core rubrics that have proven most useful:

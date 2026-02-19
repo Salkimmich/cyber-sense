@@ -89,7 +89,7 @@ Deep dive into each committee character:
 Including: when each is essential, failure modes, calibration notes, interaction patterns.
 
 ### Deliberation records (directory structure)
-When using the committee and review skills (`.claude/skills/committee/`, `.claude/skills/review/`), every committee run writes a deliberation record to `agent/deliberations/<topic-slug>/` with files `00-charter.yml`, `01-roster.yml`, `01-convening.md`, `02-deliberation.md`, and `03-resolution.yml`. Use `/review agent/deliberations/<topic-slug>` to evaluate the transcript and optionally write to `04-evaluation.yml`. See `agent/deliberations/README.md`.
+When using the committee and review skills (`.claude/skills/committee/`, `.claude/skills/review/`), every committee run writes a deliberation record to `agent/deliberations/<topic-slug>/` with files `00-charter.yml`, `01-roster.yml`, `01-convening.md`, `02-deliberation.md`, and `03-resolution.yml`. Use `/review agent/deliberations/<topic-slug>` to evaluate the transcript and write to `04-evaluation-1.yml` (and, when the feedback loop runs, `06-evaluation-2.yml`, etc.). **Evaluation feedback loop (remediation):** when the evaluation sum is below threshold (default 13), the committee can run a remediation round; see [Independent Evaluation — Evaluation Feedback Loop](./independent-evaluation.md#evaluation-feedback-loop-remediation) and `agent/deliberations/README.md`.
 
 ## Integration
 

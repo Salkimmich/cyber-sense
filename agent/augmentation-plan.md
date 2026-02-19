@@ -17,8 +17,11 @@ cyber-sense/agent/deliberations/<topic-slug>/
   01-convening.md
   02-deliberation.md
   03-resolution.yml
-  04-evaluation.yml
+  04-evaluation-1.yml
+  (optional: 05-remediation-1.md, 06-evaluation-2.yml, … when feedback loop runs)
 ```
+
+**Naming:** The numeric prefix (00, 01, …) is a **chronology index** (order in the process), not a file-type ID. The **type** is the rest of the name: charter, roster, convening, deliberation, resolution, evaluation. When there is more than one instance of a type (e.g. multiple evaluations or remediation rounds), use **incrementing suffixes** (-1, -2, …) so filenames stay unique: e.g. `04-evaluation-1.yml`, `04-evaluation-2.yml`; `05-remediation-1.md`, `05-remediation-2.md`. For the feedback loop (evaluate → remediate → re-evaluate → …), the **chronology index** increments for each new file (04, 05, 06, 07, …) so lexical sort stays chronological.
 
 - **topic-slug:** Short, filesystem-safe name derived from the topic (e.g. `microservices-migration`, `is-author-crackpot`). No references to paths outside `cyber-sense/`.
 - **Optional:** A minimal `DEBATE.yml` (name, topic, current_phase) can be added later if useful for tooling; **ROOM.yml is omitted** (MOOLLM-specific).
@@ -128,19 +131,19 @@ resolution:
 
 Filled from the deliberation’s Final Consensus and DECISION SPACE MAP / VERDICT. Keeps resolution as a first-class artifact for evaluation.
 
-### 2.6 `04-evaluation.yml`
+### 2.6 `04-evaluation-1.yml` (and 06-evaluation-2.yml, …)
 
 Two possible sources of evaluation in cyber-sense:
 
 - **A) Resolution-only evaluation (MOOLLM-style):** Independent evaluator sees only `00-charter.yml` and `03-resolution.yml`; scores alignment_with_goal, completeness, feasibility, risk_mitigation; outputs RATIFIED / REVISE / REJECT and critique. No transcript.
-- **B) Transcript review (current /review):** Evaluator sees `02-deliberation.md` (and optionally charter) and scores the five rubrics (reasoning completeness, adversarial rigor, assumption surfacing, evidence standards, trade-off explicitness).
+- **B) Transcript review (current /review):** Evaluator sees `02-deliberation.md` (and optionally charter) and scores the five rubrics (reasoning completeness, adversarial rigor, assumption surfacing, evidence standards, trade-off explicitness). **Score for feedback loop:** sum of the five rubric scores (0–15). **Sum &lt; 13** (default; overridable in convening file) triggers remediation.
 
 **Plan:** Support both.
 
-- **04-evaluation.yml** holds the **resolution-only** evaluation (schema below), so the directory has a clean “charter + resolution → score” record.
-- The **review skill** continues to evaluate the **transcript** (02-deliberation.md) with the five rubrics; it can optionally **write** its summary into 04-evaluation.yml under a second key (e.g. `transcript_review`) or into a separate section so one file captures both resolution evaluation and transcript review.
+- **04-evaluation-1.yml** (and 06-evaluation-2.yml, …) can hold **resolution-only** evaluation and/or **transcript_review** (five rubrics, verdict, recommendations). **First evaluation file is always numbered.** Threshold and max remediation rounds are in the **convening file**; no need to duplicate in the evaluation file. The directory has a clean “charter + resolution → score” record.
+- The **review skill** writes transcript review into the appropriate evaluation file (04-evaluation-1 for first review, then 06-evaluation-2, etc.).
 
-Suggested **04-evaluation.yml** schema (resolution-only part):
+Suggested **04-evaluation-1.yml** schema (resolution-only part):
 
 ```yaml
 # Phase 4: Evaluation (resolution vs charter)
@@ -181,8 +184,8 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
 
 **Changes:**
 
-1. **Output mode: directory vs inline**
-   - Add an option (e.g. “when saving to a deliberation record” or “when user requests structured output”) to write the deliberation into `agent/deliberations/<topic-slug>/` instead of (or in addition to) inline response.
+1. **Output mode: always directory**
+   - Every `/committee [topic]` run writes the deliberation into `agent/deliberations/<topic-slug>/`. There is no inline-only or single-file mode.
    - Topic-slug: derive from topic (lowercase, replace spaces with `-`, strip special chars). Example: “Should we adopt microservices?” → `microservices-adoption` or `microservices-migration`.
 
 2. **Phased file production**
@@ -205,8 +208,8 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
 4. **Roster**
    - Keep the existing roster (Maya, Frankie, Joe, Vic, Tammy) and dynamics; 01-roster.yml is a **serialization** of that roster, not a new roster definition. No Samir, no external character files.
 
-5. **Backward compatibility**
-   - If the user does **not** request “structured output” or “save to deliberation record,” behavior remains: produce the same inline deliberation (phases 1–3 and output format as today). So existing `/committee [topic]` usage is unchanged unless the user opts in to directory output.
+5. **Always directory**
+   - If the user does **not** request “structured output” or “save to deliberation record,” behavior remains: produce the same inline deliberation (phases 1–3 and output format as today). So existing `/committee [topic]` usage is unchanged. Committee always produces the directory (00–03); inline summary can still be offered, but the canonical record is the directory.
 
 6. **Documentation in skill**
    - Add a short “Deliberation record directory” section describing the 00–04 layout and when it is used. Point to `agent/deliberations/` and `agent/augmentation-plan.md` (or a short `agent/deliberations/README.md` if added).
@@ -223,20 +226,17 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
    - When the user runs `/review` and indicates a **deliberation directory** (e.g. “review agent/deliberations/microservices-migration” or “review the last deliberation record”), the skill should:
      - Resolve the directory (e.g. `agent/deliberations/<topic-slug>/`).
      - Read `02-deliberation.md` as the transcript (and optionally `00-charter.yml` for charter).
-     - Optionally read `04-evaluation.yml` if it exists (to append or compare transcript review).
+     - Determine the next evaluation file: if no evaluation file exists, write `04-evaluation-1.yml`; if remediation has run, write the next (e.g. `06-evaluation-2.yml`). Always use a number for the first evaluation file (04-evaluation-1.yml).
    - If no directory is given, keep current behavior: use the most recent committee output in the conversation or user-pasted transcript.
 
-2. **Output: write 04-evaluation.yml (transcript review)**
-   - When reviewing from a deliberation directory, the skill may **optionally** write the **transcript review** into that directory. Two options:
-     - **A)** Add a `transcript_review` section to `04-evaluation.yml` (scores for the five rubrics, verdict, biggest gaps, recommendations). If 04-evaluation.yml does not exist yet, create it with only `transcript_review` (resolution-only evaluation can be added later or left empty).
-     - **B)** Write a separate file, e.g. `04-transcript-review.yml` or `04-transcript-review.md`, and keep `04-evaluation.yml` for resolution-only evaluation.
-   - Recommendation: **A)** single 04-evaluation.yml with optional keys `resolution_evaluation` and `transcript_review` so one file holds both evaluations.
+2. **Output: write evaluation file (transcript review)**
+   - When reviewing from a deliberation directory, write the **transcript review** to the appropriate file: **04-evaluation-1.yml** for the first review, then **06-evaluation-2.yml**, **08-evaluation-3.yml**, … when the feedback loop has run. Use optional keys `resolution_evaluation` and `transcript_review` so one file can hold both. Threshold (default sum &lt; 13) and max remediation rounds (2) are read from the **convening file** when running the feedback loop; no need to duplicate in the evaluation file.
 
 3. **References (self-contained)**
    - All paths in the review skill stay under cyber-sense: `artifacts/evaluation-rubrics-reference.md`, `artifacts/independent-evaluation.md`, `agent/deliberations/<topic-slug>/...`.
 
 4. **Integration with committee**
-   - After a committee run that wrote to a deliberation directory, suggest: “Want me to run `/review` on this deliberation? I can evaluate the transcript and optionally update 04-evaluation.yml.”
+   - After a committee run that wrote to a deliberation directory, suggest: “Want me to run `/review` on this deliberation? I can evaluate the transcript and write to 04-evaluation-1.yml.”
 
 ---
 
@@ -261,7 +261,7 @@ All paths in this file are relative to the deliberation directory (e.g. `00-char
 1. **Create** `agent/deliberations/` and optionally `agent/deliberations/README.md` describing the 00–04 structure.
 2. **Add** to committee skill: section “Deliberation record directory,” phased file production (00 → 01 → 02 → 03), topic-slug rule, self-contained path references. Every run writes the directory; no inline-only mode.
 3. **Implement** 00–03 file generation in committee flows (or in agent instructions that call the skill): charter from topic, fixed roster + convening, deliberation content into 02, resolution into 03.
-4. **Add** to review skill: “Review from deliberation directory” (read 02-deliberation.md [+ 00-charter.yml]), optional write of transcript review into 04-evaluation.yml (or 04-transcript-review), self-contained paths.
+4. **Add** to review skill: “Review from deliberation directory” (read 02-deliberation.md [+ 00-charter.yml]), write of transcript review into 04-evaluation-1.yml (or 06-evaluation-2.yml when feedback loop has run), self-contained paths.
 5. **Define** who produces resolution-only 04 (e.g. separate “evaluator” step or a second pass of the review skill with only charter + resolution). Document in review skill or in `agent/deliberations/README.md`.
 6. **Test** with one full run: create a deliberation directory, run committee with “save to deliberation record,” then run review on that directory and confirm 02 and 04 (and optionally 00, 01, 03) are present and consistent.
 
