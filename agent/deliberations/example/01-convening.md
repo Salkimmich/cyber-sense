@@ -15,4 +15,4 @@ The fixed cyber-sense roster provides maximum diversity: paranoid realism (Maya)
 
 ## Outcome
 
-Committee convened with 5 members. See 01-roster.yml.
+Committee convened with 5 members. See 01-roster.md.

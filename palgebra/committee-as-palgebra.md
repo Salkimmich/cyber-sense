@@ -13,12 +13,12 @@ Every named type below corresponds to a file in the deliberation record director
 | Type name | File | Template (structural shape) | Rubric (quality criteria) |
 |-----------|------|-----------------------------|---------------------------|
 | `problem-statement` | (user input) | Natural-language description of a complex, ambiguous problem | Has genuine competing framings; is not a lookup question |
-| `charter` | `00-charter.yml` | YAML with goal, context, success\_criteria, exit\_conditions, deliverable\_format | Goal is falsifiable; success criteria are specific; context is sufficient for outsiders |
-| `roster` | `01-roster.yml` | YAML with five fixed members (Maya, Frankie, Joe, Vic, Tammy), roles, propensities | All five failure modes covered; natural tensions present |
+| `charter` | `00-charter.md` | YAML front matter with goal, context, success\_criteria, exit\_conditions, deliverable\_format | Goal is falsifiable; success criteria are specific; context is sufficient for outsiders |
+| `roster` | `01-roster.md` | YAML front matter with five fixed members (Maya, Frankie, Joe, Vic, Tammy), roles, propensities | All five failure modes covered; natural tensions present |
 | `convening` | `01-convening.md` | Markdown narrative: selection rationale, composition notes, remediation parameters | Rationale explains why this problem needs this roster; parameters are justified |
 | `transcript` | `02-deliberation.md` | Markdown with Opening Statements, Initial Positions, Key Tensions, Rounds, Final Consensus, Decision Space Map | Five rubric dimensions (see below) |
-| `resolution` | `03-resolution.yml` | YAML with outcome, decision, summary, probability distribution, votes, signatures | Addresses charter success criteria; votes are individually reasoned |
-| `evaluation` | `04-evaluation-1.yml` | YAML with rubric\_scores (5 dimensions, 0-3 each), aggregate, verdict, gaps, recommendations | Citations are specific; scores match cited evidence; gaps are actionable |
+| `resolution` | `03-resolution.md` | YAML front matter with outcome, decision, summary, probability distribution, votes, signatures | Addresses charter success criteria; votes are individually reasoned |
+| `evaluation` | `04-evaluation-1.md` | YAML front matter with rubric\_scores (5 dimensions, 0-3 each), aggregate, verdict, gaps, recommendations | Citations are specific; scores match cited evidence; gaps are actionable |
 | `remediation` | `05-remediation-1.md` | Markdown point-by-point response to evaluation, plus new debate round appended to transcript | Every cited gap addressed; new material is substantive, not cosmetic |
 
 The five transcript rubric dimensions — reasoning completeness, adversarial rigor, assumption surfacing, evidence standards, trade-off explicitness — are themselves the rubric component of the `transcript` soft type. The evaluation skill applies this rubric to produce scores, making the review operation an enrichment in the precise palgebra sense.
@@ -217,7 +217,7 @@ The three propagation rules from the palgebra formalism apply directly:
 
 **Confidence can only degrade.** A transcript scored Medium (aggregate 2.2, as in the `is-author-crackpot` example) cannot produce a High-confidence resolution. The resolution inherits the transcript's quality ceiling. The evaluation makes this explicit by scoring each dimension 0-3 and computing an aggregate.
 
-**Provenance can only accumulate.** Each file in the deliberation record carries provenance: `00-charter.yml` records the goal and context; `02-deliberation.md` records which characters said what and when; `04-evaluation-1.yml` records who evaluated, when, against which rubrics. The chain of custody grows monotonically through the pipeline. No operation can erase prior provenance.
+**Provenance can only accumulate.** Each file in the deliberation record carries provenance: `00-charter.md` records the goal and context; `02-deliberation.md` records which characters said what and when; `04-evaluation-1.md` records who evaluated, when, against which rubrics. The chain of custody grows monotonically through the pipeline. No operation can erase prior provenance.
 
 **Content transforms.** The user's problem statement becomes a charter becomes a transcript becomes a resolution. Each transformation produces genuinely new content. The palgebra tracks these transformations as morphisms that consume inputs and produce outputs of different types.
 

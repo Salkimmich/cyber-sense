@@ -192,7 +192,7 @@ This document captures key insights about how the Cyber-Sense methodology evolve
 
 **Created**:
 - `/committee` skill — executable adversarial committee deliberation, writes structured output to `agent/deliberations/<topic-slug>/` (files 00-03)
-- `/review` skill — independent evaluation against five rubrics, writes to 04-evaluation-1.yml (and 06/08 for feedback loop rounds)
+- `/review` skill — independent evaluation against five rubrics, writes to 04-evaluation-1.md (and 06/08 for feedback loop rounds)
 - `/string-diagram` skill — resource equations → Mermaid diagram converter (`resource_equations_to_mermaid.py`, no dependencies)
 - `/handoff` skill — session handoff generation with archival of previous handoff
 - **Evaluation feedback loop**: full implementation of remediation cycle — review scores below threshold → committee remediation round → re-review, max 2 rounds, with convening-file overrides for threshold and max rounds

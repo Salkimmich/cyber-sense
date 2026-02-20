@@ -1,4 +1,4 @@
-# Phase 0: Charter (backfilled from committee-transcript-2026-02-17-is-author-crackpot.md)
+---
 charter:
   goal: "Assess whether the author of this repository is a crackpot, given its synthesis of cybernetics, sense-making theory, narrative cognition, and adversarial committee methodology."
   context: |
@@ -17,4 +17,5 @@ charter:
   exit_conditions:
     - "Committee verdict with probability distribution over outcomes"
     - "Decision space map and recommended next steps for validation"
-  deliverable_format: "Resolution Artifact (YAML) + Decision Space Map"
+  deliverable_format: "Resolution Artifact + Decision Space Map"
+---

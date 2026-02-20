@@ -1,11 +1,9 @@
-# Phase 4: Evaluation (first review)
-# transcript_review: Independent evaluation of 02-deliberation.md (five rubrics)
-
+---
 transcript_review:
   id: "transcript-review-is-author-crackpot-001"
   timestamp: "2026-02-18"
   input: "02-deliberation.md"
-  charter_ref: "00-charter.yml"
+  charter_ref: "00-charter.md"
 
   rubric_scores:
     reasoning_completeness: 2
@@ -58,3 +56,4 @@ transcript_review:
   recommendations:
     - "If regenerating: add a short round where Vic or Joe challenges the probability distribution—what evidence would shift the 60%? What would move crackpot above 10%?"
     - "Make the mapping from 'theory load-bearing' / 'falsifiable in practice' / 'not sealed' to the four outcome buckets explicit in one paragraph before the percentages."
+---

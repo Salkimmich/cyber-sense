@@ -1,4 +1,4 @@
-# Phase 1: Roster (fixed cyber-sense committee)
+---
 roster:
   committee_name: "Cyber-Sense Adversarial Committee"
   size: 5
@@ -18,3 +18,4 @@ roster:
     - name: "Tammy"
       role: systems_analyst
       propensity: systems_thinking
+---

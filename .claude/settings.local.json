@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(where:*)",
-      "WebFetch(domain:factory.strongdm.ai)"
+      "WebFetch(domain:factory.strongdm.ai)",
+      "Bash(dir:*)"
     ]
   }
 }

@@ -1,4 +1,4 @@
-# Phase 0: Charter (example — replace with real charter when running committee record)
+---
 charter:
   goal: "Example goal — define the decision to be made in one sentence."
   context: |
@@ -8,4 +8,5 @@ charter:
     - "Criterion 2"
   exit_conditions:
     - "Consensus or clear decision space map"
-  deliverable_format: "Resolution Artifact (YAML) + Decision Space Map"
+  deliverable_format: "Resolution Artifact + Decision Space Map"
+---

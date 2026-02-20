@@ -1,10 +1,7 @@
-# Phase 4: Evaluation (example)
-# resolution_evaluation = charter + resolution only (no transcript)
-# transcript_review = five rubrics on 02-deliberation.md — written by /review when run on this directory
-
+---
 # resolution_evaluation:
 #   id: "eval-example-001"
-#   inputs: { charter: "00-charter.yml", resolution: "03-resolution.yml" }
+#   inputs: { charter: "00-charter.md", resolution: "03-resolution.md" }
 #   rubric: { criteria: [alignment_with_goal, completeness, feasibility, risk_mitigation] }
 #   scores: { ... }
 #   decision: { outcome: "RATIFIED", confidence: "High" }
@@ -17,3 +14,4 @@
 #   verdict: "Low"
 #   biggest_gaps: []
 #   recommendations: []
+---

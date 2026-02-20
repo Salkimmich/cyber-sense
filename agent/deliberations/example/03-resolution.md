@@ -1,4 +1,4 @@
-# Phase 3: Resolution (example — filled by committee skill after deliberation)
+---
 resolution:
   date: "YYYY-MM-DD"
   topic: "[Topic string]"
@@ -15,3 +15,4 @@ resolution:
   signatures:
     chair: "Committee (Cyber-Sense)"
     ratified_by: "User"
+---

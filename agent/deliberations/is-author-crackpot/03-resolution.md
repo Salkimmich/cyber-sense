@@ -1,4 +1,4 @@
-# Phase 3: Resolution (backfilled from transcript verdict and conclusion)
+---
 resolution:
   date: "2026-02-17"
   topic: "Is the author of this repo a crackpot?"
@@ -29,3 +29,4 @@ resolution:
   signatures:
     chair: "Committee (Cyber-Sense)"
     ratified_by: "User"
+---

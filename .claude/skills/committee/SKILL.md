@@ -93,12 +93,12 @@ When two allied characters agree too quickly, push the opposing character harder
 
 When invoked, the skill:
 
-1. **Creates the deliberation record directory** `agent/deliberations/<topic-slug>/` and writes 00-charter.yml, 01-roster.yml, 01-convening.md (from the topic and fixed roster).
+1. **Creates the deliberation record directory** `agent/deliberations/<topic-slug>/` and writes 00-charter.md, 01-roster.md, 01-convening.md (from the topic and fixed roster).
 2. **Initializes the committee** with all 5 characters and their propensities
 3. **Presents the problem** as stated by the user (or prompts for clarification if vague)
 4. **Generates initial perspectives** from each character (2-3 paragraphs each)
 5. **Facilitates structured debate** with characters responding to each other
-6. **Writes 02-deliberation.md** (full transcript) and **03-resolution.yml** (decision, votes, summary).
+6. **Writes 02-deliberation.md** (full transcript) and **03-resolution.md** (decision, votes, summary).
 7. **Surfaces key insights** (optionally inline): assumptions, trade-offs, evidence requirements, decision space map, recommended next steps.
 
 The canonical output is the **deliberation record directory** (00–04). The substance is not consensus—it's a **map of the decision space** showing what's at stake, what's uncertain, and what different framings reveal or obscure.
@@ -258,9 +258,9 @@ Every committee run writes a deliberation record to a dedicated directory. There
 **Phased file production:** Create the directory and write files in order.
 
 1. **Before deliberation** (from topic + any user context):
-   - **00-charter.yml** — `charter:` with `goal`, `context` (2–4 sentences), `success_criteria` (list), `exit_conditions` (list), `deliverable_format: "Resolution Artifact (YAML) + Decision Space Map"`.
-   - **01-roster.yml** — Fixed 5-member roster: `roster:` with `committee_name: "Cyber-Sense Adversarial Committee"`, `size: 5`, `members:` list of `name`, `role`, `propensity` for Maya (devil's_advocate, paranoid_realism), Frankie (opportunity_scout, idealism), Joe (historian, continuity_guardian), Vic (evidence_checker, evidence_prosecutor), Tammy (systems_analyst, systems_thinking). No external `file:` references; character details stay in `artifacts/character-propensity-reference.md`.
-   - **01-convening.md** — Markdown: Date, Selection strategy (e.g. "Standard 5-member roster"), Rationale (why this roster: diversity, tensions, coverage), Composition notes (Maya vs Frankie, grounding from Joe/Vic, exploration from Tammy/Frankie), Outcome ("Committee convened with 5 members. See 01-roster.yml."). **Optional (evaluation feedback loop):** A short "Remediation parameters" section with **remediation_threshold** (default 13; pass if sum of five rubric scores ≥ this) and **max_remediation_rounds** (default 2), if this deliberation should use non-default values.
+   - **00-charter.md** — Markdown with YAML front matter. `charter:` with `goal`, `context` (2–4 sentences), `success_criteria` (list), `exit_conditions` (list), `deliverable_format: "Resolution Artifact + Decision Space Map"`.
+   - **01-roster.md** — Markdown with YAML front matter. Fixed 5-member roster: `roster:` with `committee_name: "Cyber-Sense Adversarial Committee"`, `size: 5`, `members:` list of `name`, `role`, `propensity` for Maya (devil's_advocate, paranoid_realism), Frankie (opportunity_scout, idealism), Joe (historian, continuity_guardian), Vic (evidence_checker, evidence_prosecutor), Tammy (systems_analyst, systems_thinking). No external `file:` references; character details stay in `artifacts/character-propensity-reference.md`.
+   - **01-convening.md** — Markdown: Date, Selection strategy (e.g. "Standard 5-member roster"), Rationale (why this roster: diversity, tensions, coverage), Composition notes (Maya vs Frankie, grounding from Joe/Vic, exploration from Tammy/Frankie), Outcome ("Committee convened with 5 members. See 01-roster.md."). **Optional (evaluation feedback loop):** A short "Remediation parameters" section with **remediation_threshold** (default 13; pass if sum of five rubric scores ≥ this) and **max_remediation_rounds** (default 2), if this deliberation should use non-default values.
 
 2. **During/after deliberation:**
    - **02-deliberation.md** — Full transcript in this structure:
@@ -273,7 +273,7 @@ Every committee run writes a deliberation record to a dedicated directory. There
      - Then the standard output blocks: **KEY TENSIONS IDENTIFIED**, **ASSUMPTIONS SURFACED**, **EVIDENCE REQUIREMENTS**, **DECISION SPACE MAP**, **RECOMMENDED NEXT STEPS**, and if applicable **VERDICT** or **CONCLUSION**.
 
 3. **After synthesis:**
-   - **03-resolution.yml** — From Final Consensus and DECISION SPACE MAP / VERDICT. Structure: `resolution:` with `date` (YYYY-MM-DD), `topic`, `outcome` (PASSED | DEFERRED | NO_CONSENSUS), `decision` (one line), `summary` (paragraph), optional `details`, optional `implementation_plan` (list of action/description), `votes` (maya, frankie, joe, vic, tammy: YES | NO | ABSTAIN or conditional text), `signatures` (chair: "Committee (Cyber-Sense)", ratified_by: "User").
+   - **03-resolution.md** — Markdown with YAML front matter. From Final Consensus and DECISION SPACE MAP / VERDICT. Structure: `resolution:` with `date` (YYYY-MM-DD), `topic`, `outcome` (PASSED | DEFERRED | NO_CONSENSUS), `decision` (one line), `summary` (paragraph), optional `details`, optional `implementation_plan` (list of action/description), `votes` (maya, frankie, joe, vic, tammy: YES | NO | ABSTAIN or conditional text), `signatures` (chair: "Committee (Cyber-Sense)", ratified_by: "User").
 
 After writing the record, you may summarize the decision space map (KEY TENSIONS, RECOMMENDED NEXT STEPS) inline for the user's convenience; the authoritative output remains the directory.
 
@@ -284,13 +284,13 @@ After writing the record, you may summarize the decision space map (KEY TENSIONS
 When the user or workflow invokes the committee for **remediation** (e.g. "committee respond to evaluation for agent/deliberations/&lt;topic-slug&gt;" or "/committee remediation agent/deliberations/&lt;topic-slug&gt;" or "run a remediation round for this deliberation"):
 
 1. **Resolve the deliberation directory** (e.g. `agent/deliberations/<topic-slug>/`).
-2. **Read:** 00-charter.yml, 02-deliberation.md, and the **latest evaluation file** (04-evaluation-1.yml, or 06-evaluation-2.yml if the first remediation already ran, or 08-evaluation-3.yml if two remediations exist). From the evaluation file use `transcript_review`: rubric scores, biggest_gaps, recommendations.
+2. **Read:** 00-charter.md, 02-deliberation.md, and the **latest evaluation file** (04-evaluation-1.md, or 06-evaluation-2.md if the first remediation already ran, or 08-evaluation-3.md if two remediations exist). From the evaluation file use `transcript_review`: rubric scores, biggest_gaps, recommendations.
 3. **Check:** If 05-remediation-1.md and 07-remediation-2.md already exist, do not run again (max 2 remediation rounds). Tell the user the deliberation has already had two remediation rounds.
 4. **Produce:**
    - **Remediation file:** 05-remediation-1.md (or 07-remediation-2.md if 05 already exists). Content: frame the evaluation as a motion to recommit; for each recommendation in the evaluation, state accept / reject with reason / amend, and what the committee will add or change; then summarize the new round you will add.
    - **Append to 02-deliberation.md:** A new section "## Response to evaluation (motion to recommit)" and "## Round 2: [topic]" (or "Round 3" if 07-remediation-2.md). Include the committee's point-by-point response and the new round of debate addressing the evaluator's recommendations.
-   - **Update 03-resolution.yml** if the resolution or consensus changed.
-5. **After writing:** Suggest running `/review` again on the directory; the review skill will write to 06-evaluation-2.yml (or 08-evaluation-3.yml).
+   - **Update 03-resolution.md** if the resolution or consensus changed.
+5. **After writing:** Suggest running `/review` again on the directory; the review skill will write to 06-evaluation-2.md (or 08-evaluation-3.md).
 
 ## Customization options
 
