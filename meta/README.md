@@ -40,6 +40,15 @@ feedback, and what they tell us about whether the methodology works
 outside its birthplace. Tracks against the predictions made by the
 Feb 1, 2026 self-evaluation.
 
+### [is-author-crackpot.md](is-author-crackpot.md)
+
+Two adversarial committee runs (Feb 17 and Feb 21, 2026) assessing
+whether the repository's interdisciplinary synthesis is genuine or
+crackpottery. Verdict: not a crackpot, but the live question is
+whether the methodology outperforms simpler approaches. Includes
+the probability distribution, debate history, and calibration anchors
+for what evidence would change the numbers.
+
 ## Why This Directory Exists
 
 The methodology claims to be self-improving: applying Cyberneutics to
