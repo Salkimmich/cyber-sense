@@ -15,6 +15,17 @@ session state (agent/).
 
 ## Contents
 
+### [research-plan.md](research-plan.md) ← **Start here if you want to contribute**
+
+Ten concrete action items derived from the [Societies of Thought analysis](../essays/societies-of-thought-synthesis.md). Each item specifies what to build, why it matters, how to do it, and a success metric. Items span four categories:
+
+- **Category A** — Strengthen existing infrastructure: personality architecture for committee characters, balance metrics, reconciliation protocols
+- **Category B** — Test generalization: transfer learning across domains, domain-specific character variants
+- **Category C** — Formalize theory: information-theoretic foundations essay, social scaling theory
+- **Category D** — Expand evidence: worked examples library, comparative effectiveness study
+
+Phases 1–3 are accessible without deep repo context. If any item interests you — as practitioner, theorist, or builder — pick it up and run.
+
 ### [methodology-evolution.md](methodology-evolution.md)
 
 How the methodology developed: mistakes made, dead ends explored,
@@ -35,6 +46,7 @@ The methodology claims to be self-improving: applying Cyberneutics to
 itself should produce measurable improvements. This directory is where
 that claim gets tested.
 
+- **research-plan.md** is the active work queue — what needs doing and how
 - **methodology-evolution.md** shows whether the methodology actually
   evolved through practice (not just accumulated documentation)
 - **uptake-and-usage.md** shows whether anyone outside the project
