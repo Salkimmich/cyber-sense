@@ -129,6 +129,8 @@ Dervin's Situation-Gap-Bridge model is inherently cybernetic:
 - Bridges are feedback mechanisms that alter system state
 - Each iteration produces new initial conditions
 
+The full implications of this cybernetic loop — including why observation literally changes what you're observing — are developed in [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md).
+
 ## Practical Implications for AI Collaboration
 
 Understanding Sense-Making changes how you work with AI:

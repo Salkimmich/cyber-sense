@@ -183,13 +183,13 @@ Essay 06 introduces a geometric metaphor: complex problems are manifolds
 requiring multiple coordinate charts, each revealing different aspects,
 none sufficient alone.
 
-The committee's five characters — Maya (institutional), Frankie
-(adversarial), Joe (pragmatic), Vic (creative), Tammy (methodical) — are
+The committee's five characters — Maya (paranoid-realist), Frankie
+(idealist), Joe (pragmatic), Vic (evidentiary), Tammy (systems) — are
 charts on the problem manifold. Each character's propensities define a
 coordinate system: a way of organizing the problem that makes certain
-features visible and others invisible. Maya sees governance; Frankie sees
-hidden risks; Joe sees implementation; Vic sees alternatives; Tammy sees
-process gaps.
+features visible and others invisible. Maya sees hidden risks and political
+dynamics; Frankie sees unrealized possibilities; Joe sees implementation
+realities; Vic sees evidentiary gaps; Tammy sees systemic patterns.
 
 In palgebra terms, the character propensities are **catalytic inputs** —
 they participate in the Deliberate operation without being consumed:

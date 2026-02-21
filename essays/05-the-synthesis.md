@@ -106,7 +106,9 @@ The goal isn't to get the machine to be right. It's to get the system (You + Mac
 
 ---
 
-**Next in theory**: [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md) — the "physics" of the loop.
+**See also**: [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md) — the "physics" of the loop.
+
+**Next**: [Deleuzian Foundations](./06-deleuze-difference-repetition.md) — the "what" that the loop produces.
 
 **Related artifacts**:
 - [Adversarial Committees](../artifacts/adversarial-committees.md) — the loop that forces divergence (practical form of the synthesis)

@@ -2,6 +2,14 @@
 
 This directory contains essays exploring the theoretical foundations of Cyber-Sense methodology and how Second-Order Cybernetics, Sense-Making Methodology, and Deleuzian philosophy compose into a coherent framework for AI collaboration.
 
+## Terminology
+
+Three terms recur across this collection with distinct meanings:
+
+- **Cybernetic Hermeneutics** — the theoretical synthesis: interpretation as a regulated, dynamic feedback loop (defined in [Essay 05](./05-the-synthesis.md))
+- **Narrative Engineering** — the discipline: using engineering principles to design processes for generating and evaluating narratives (developed in [Essay 07](./07-bolands-narrative-engineering.md))
+- **Cyber-Sense** — the methodology: the specific techniques (adversarial committees, parliamentary procedures, RUBRIC evaluation) implemented within this repository
+
 ## Reading Paths
 
 ### For Practitioners (Start Here)
@@ -9,19 +17,21 @@ This directory contains essays exploring the theoretical foundations of Cyber-Se
 If you want to understand why this methodology works and what problem it solves:
 
 1. **[Why Narrative Engines Change Everything](./01-why-narrative-engines-change-everything.md)** - The paradigm shift from symbolic to narrative computing
-2. **[Stories All the Way Down](./stories-all-the-way-down.md)** - Why everything is narrative and what that means for AI use
-3. **[Introduction to Sense-Making](./03-sensemaking-101.md)** - Dervin's framework for understanding information-seeking as active construction
+2. **[From Practice to Theory: How We Got Here](./02-from-practice-to-theory.md)** - How operational failures led to the methodology (personal narrative)
+3. **[Stories All the Way Down](./stories-all-the-way-down.md)** - Why everything is narrative and what that means for AI use
+4. **[Introduction to Sense-Making](./03-sensemaking-101.md)** - Dervin's framework for understanding information-seeking as active construction
 
 ### For Theorists (Deep Dive)
 
 If you want to understand the theoretical synthesis:
 
 1. **[Why Narrative Engines Change Everything](./01-why-narrative-engines-change-everything.md)** - Historical context
-2. **[From Practice to Theory: How We Got Here; The Game within a Game](./02-from-practice-to-theory.md)** - How operational failures led to the "Game within a Game" framework
-3. **[Introduction to Sense-Making](./03-sensemaking-101.md)** - Dervin's Situation-Gap-Bridge model
-4. **[Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md)** - Second-order cybernetics and why observation changes state
-5. **[The Synthesis](./05-the-synthesis.md)** - How sense-making is inherently cybernetic
-6. **[Deleuzian Foundations](./06-deleuze-difference-repetition.md)** - Becoming, difference, and why repetition produces novelty
+2. **[Narrative Computing as Historical Progression](./narrative-computing-history.md)** - Deeper historical grounding: cognitive, computational, and systems-theoretic threads
+3. **[From Practice to Theory: How We Got Here; The Game within a Game](./02-from-practice-to-theory.md)** - How operational failures led to the "Game within a Game" framework
+4. **[Introduction to Sense-Making](./03-sensemaking-101.md)** - Dervin's Situation-Gap-Bridge model
+5. **[Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md)** - Second-order cybernetics and why observation changes state
+6. **[The Synthesis](./05-the-synthesis.md)** - How sense-making is inherently cybernetic
+7. **[Deleuzian Foundations](./06-deleuze-difference-repetition.md)** - Becoming, difference, and why repetition produces novelty
 
 ### For Skeptics (Show Me Why This Matters)
 
@@ -225,7 +235,7 @@ The essays in this directory establish *why* narrative engines need structured m
 
 ### [Societies of Thought: From Neural Evidence to Methodological Action](./societies-of-thought-synthesis.md)
 
-**The validation**: Analyzes how recent research on "Societies of Thought" provides empirical backing for Cyber-Sense techniques (adversarial roles, perspective swiching).
+**The validation**: Analyzes how recent research on "Societies of Thought" provides empirical backing for Cyber-Sense techniques (adversarial roles, perspective switching).
 
 **Key insight**: Surprise markers in discourse correlate with better reasoning. Adversarial committees are engines for generating this surprise (entropy reduction).
 

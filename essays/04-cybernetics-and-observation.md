@@ -38,7 +38,7 @@ This is a coupled oscillator. You and the AI are two dynamic systems adjusting e
 
 ## The Physics of Deleuze: Actualization via Observation
 
-This is where the engineering of Cybernetics meets the metaphysics of [Deleuze](./06-deleuze-difference-repetition.md).
+This is where the engineering of Cybernetics meets the metaphysics of [Deleuze](./06-deleuze-difference-repetition.md). The concepts below — virtuality, actuality, actualization — receive their full philosophical treatment in [Essay 06](./06-deleuze-difference-repetition.md). What follows is a working sketch: enough to see how they connect to cybernetics, without the full philosophical apparatus.
 
 Deleuze argues that reality consists of a **Virtual** field (potentials) that gets collapsed into **Actual** existence.
 Cybernetics provides the mechanism for this collapse: **Observation.**
@@ -63,8 +63,9 @@ If everything is a loop of becoming, how does anything ever stay still? How do w
 Heinz von Foerster gave the mathematical answer: **Eigenforms.**
 
 An eigenform is a recursive value—a specific state that a function creates, which then creates itself.
-$$ x_{t+1} = F(x_t) $$
-If this loop stabilizes such that $x = F(x)$, you have found an Eigenform.
+xₜ₊₁ = F(xₜ)
+
+If this loop stabilizes such that x = F(x), you have found an Eigenform.
 
 In AI interaction, we are hunting for Eigenforms.
 
@@ -73,7 +74,7 @@ In AI interaction, we are hunting for Eigenforms.
 
 **Eigenforms are the engineer's version of Deleuze's "becoming-stabilized."** They prove that you don't need fixed objects to have stability. You just need stable processes.
 
-For empirical validation of eigenforms and recursive stabilization in LLM reasoning—where trained models learn to simulate exactly these dialogic structures internally—see [Societies of Thought](./societies-of-thought-synthesis.md).
+For empirical validation of eigenforms and recursive stabilization in LLM reasoning—where trained models learn to simulate exactly these dialogic structures internally—see [Societies of Thought](./societies-of-thought-synthesis.md). For the full treatment of eigenforms — including premature convergence, deliberate destabilization, and the connection to Deleuzian process philosophy — see [Deleuzian Foundations](./06-deleuze-difference-repetition.md).
 
 ## The Observer's Responsibility
 

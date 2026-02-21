@@ -281,7 +281,7 @@ How do you maintain the umwelt across these discontinuities?
 
 **Agent directories** provide material persistence. Files exist outside conversation boundaries. State management transcends any individual session. The umwelt's material substrate persists even when no AI instance is active.
 
-**Character propensities** provide conceptual continuity. Maya's dispositional skepticism, Frankie's systems thinking, Joe's pragmatic focus—these persist as stable interpretive positions independent of which AI instance embodies them in any given session.
+**Character propensities** provide conceptual continuity. Maya's dispositional skepticism, Tammy's systems thinking, Joe's pragmatic focus—these persist as stable interpretive positions independent of which AI instance embodies them in any given session.
 
 **Lesson extraction** makes implicit learning explicit. At the end of each deliberation, extract what was learned. Codify it. Make it available for injection into future deliberations. Pattern recognition becomes institutional knowledge.
 

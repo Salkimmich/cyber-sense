@@ -4,6 +4,8 @@ We didn't start with critical theory. We started with broken agents and a rigged
 
 This essay explains the genesis of the Cyber-Sense methodology: how practical engineering failures with Large Language Models (LLMs) led to a rediscovery of narrative theory, and why "treating the model like a committee" is actually a game-theoretic defense against entropy.
 
+> *This is a personal narrative — the origin story of how the methodology emerged from practical frustration. It uses first-person voice; the other essays in this collection use "we" or "you."*
+
 ## The Engineering Problem: The Stochastic Imps
 
 Like many early adopters, I began by treating LLMs as better search engines or smarter databases. I wanted them to solve problems: generate code, analyze data, make decisions.
@@ -81,7 +83,7 @@ We aren't creating consciousness. We are creating a **dynamic system of constrai
 
 ## Connection to MOOLLM
 
-This aligns perfectly with the philosophy behind **MOOLLM** (the runtime environment this methodology is designed for). Don Hopkins explicitly frames MOOLLM as a system of "games" and "worlds."
+This aligns perfectly with the philosophy behind **[MOOLLM](https://github.com/SimHacker/MOOLLM)** — Don Hopkins' project that builds a governance framework for LLMs. MOOLLM provides structured environments ("worlds") where AI interactions are constrained by explicit rules, roles, and protocols — a runtime for exactly the kind of structured narrative games this methodology requires. Hopkins frames it as a system of "games" and "worlds."
 
 *   **MOOLLM** provides the engine to run the game (the physics, the objects, the protocols).
 *   **Cyber-Sense** designs the *rules* of the specific game we are playing (the Sense-Making Game).

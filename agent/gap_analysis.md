@@ -32,3 +32,9 @@ The following documents are listed in `essays/README.md` or `artifacts/README.md
 ### Artifacts & Examples
 *   `examples/strategic-pivot-example.md`: Strategic Pivot Example
 *   `examples/failure-case-example.md`: Failure Case Example
+
+## 3. TODO Items
+
+*   **Consider splitting fiction from `the-stochastic-imps-of-happenstance.md`**: The file is 754 lines — the longest in the collection. The narrative fiction (540 lines) and the analytical preamble/appendix serve different audiences. Consider extracting the story into a standalone file with the preamble and character appendix remaining as the essay.
+*   **Extract project plan from `societies-of-thought-synthesis.md`**: Lines 141–365 contain a detailed 10-item action plan with implementation roadmap and success criteria. This reads as project management, not essay content. Consider extracting to a planning document in `agent/`.
+*   **Cross-reference all cited documents against references directory**: Extract every document, paper, and book cited across all essays and verify they are listed somewhere in the `references/` directory. Ensure completeness and consistency of bibliographic entries.

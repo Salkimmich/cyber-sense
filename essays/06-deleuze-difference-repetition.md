@@ -257,7 +257,7 @@ Theory without practice is sterile. Practice without theory is blind. This essay
 **Related to Cyber-Sense**:
 - [Cybernetics and the Observer Problem](./04-cybernetics-and-observation.md) — How observation changes state
 - [The Synthesis](./05-the-synthesis.md) — How Deleuze, Dervin, and cybernetics compose
-- [Eigenforms and Narrative Convergence](./eigenforms-narrative-convergence.md) — Technical deep-dive on recursive stabilization
+- Eigenforms and Narrative Convergence — Technical deep-dive on recursive stabilization (coming soon)
 
 **Category Theory Background**:
 - Lawvere, F. William and Schanuel, Stephen. *Conceptual Mathematics* (1997) — Accessible introduction emphasizing conceptual over technical
