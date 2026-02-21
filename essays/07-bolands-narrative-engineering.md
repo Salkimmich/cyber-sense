@@ -297,21 +297,22 @@ This is materially different from trying to give an AI "memory" of past conversa
 
 ### A. What Narrative Engineering Actually Means
 
-**Traditional engineering** designs structures that reliably produce desired behaviors under known constraints using known materials. Bridge engineers know tensile strength, load capacity, failure modes. They design structures that work predictably.
+Two terms need separating.
 
-**Narrative engineering** designs *processes* that reliably generate useful interpretations under conditions of undecidability using narrative as computational substrate. 
+**Narrative computing** is what the machine does. An LLM takes a prompt and generates a narrative — a story, an analysis, a recommendation, a proof sketch. This is the primitive operation. It is to narrative engineering what a transistor configured to amplify is to an amplifier: the irreducible computational element. Every LLM call is a narrative computation.
 
-The key differences:
+**Narrative engineering** is how we compose primitive narrative computers into systems that do useful work. A rackmount amplifier isn't a single transistor; it's transistors, op-amps, and feedback networks composed so that the system amplifies reliably even though individual components drift, clip, and distort. The engineering is in the composition: redundancy compensates for individual unreliability, feedback keeps the output within bounds, staged gain prevents saturation.
 
-**Output**: Not a fixed answer but a *space of valid interpretations* with formal structure. The goal isn't convergence to a single truth but systematic exploration of interpretive possibilities.
+The parallel is exact. A single LLM call is unreliable in the same way a single transistor is unreliable — locally coherent but subject to drift (hallucination), noise (statistical likelihood collapse), and distortion (training bias). You don't fix this by building a better transistor. You fix it by engineering the circuit:
 
-**Materials**: Not physical objects with measurable properties but narrative structures with coherence, grounding, and scope. You're engineering with stories.
+- **Redundancy**: Multiple committee members generating independent interpretations of the same problem, so that no single narrative failure goes undetected.
+- **Feedback**: Independent evaluation scoring outputs against rubrics, with results fed back to inform subsequent iterations — the discriminator that keeps the generator honest.
+- **Iteration and recursion**: Running the same deliberation multiple times or cycling through generate-evaluate-revise loops, each pass exploring territory the previous pass couldn't reach.
+- **Staged composition**: Charter → deliberation → resolution → evaluation, each stage taking the output of the previous stage as input and transforming it — pipeline architecture where each stage has a defined type signature.
 
-**Reliability**: Not reproducible outputs (same input → same output) but reproducible *process* (same methodology → systematically explored space). The procedure is what's reproducible.
+The output of narrative engineering is not a single correct answer but a *reliably explored space of valid interpretations*. The individual narrative computations may vary; the engineering ensures that the system as a whole covers the problem space, catches its own errors, and produces artifacts whose quality can be assessed.
 
-**Validation**: Not pass/fail against specifications but scoring against rubrics by independent evaluators. Degrees of validity, not binary truth.
-
-The discipline parallels traditional engineering in rigor while differing fundamentally in what's being engineered and how success is defined.
+This is what makes the discipline genuinely engineering rather than philosophy applied: the focus is on composing unreliable primitives into reliable systems through architecture, not on perfecting the primitive.
 
 ### B. The Unified Framework
 
