@@ -74,15 +74,15 @@ These aren't incremental improvements. They represent a fundamentally different 
 - [From practice to theory: how we got here](./essays/02-from-practice-to-theory.md)
 - [Introduction to Sense-Making Methodology](./essays/03-sensemaking-101.md)
 - [The Stochastic Imps of Happenstance](./essays/the-stochastic-imps-of-happenstance.md)
-- Cybernetics and the observer problem
-- The synthesis: why sense-making is inherently cybernetic
+- [Cybernetics and the observer problem](./essays/04-cybernetics-and-observation.md)
+- [The synthesis: why sense-making is inherently cybernetic](./essays/05-the-synthesis.md)
 - [Societies of Thought: From Neural Evidence to Methodological Action](./essays/societies-of-thought-synthesis.md)
 - [Decisions Under Uncertainty](./essays/10-decisions-under-uncertainty.md)
 
 **[Artifacts](artifacts/)** - Practical techniques and protocols
 - [Adversarial committees with fixed character rosters](./artifacts/adversarial-committees.md)
-- Robert's Rules as forcing functions
-- Independent evaluation protocols
+- [Robert's Rules as forcing functions](./artifacts/roberts-rules-forcing-function.md)
+- [Independent evaluation protocols](./artifacts/independent-evaluation.md)
 - [Hiring Decision Example](./artifacts/examples/hiring-decision-example.md)
 - [Worked examples and transcripts](./artifacts/examples/README.md)
 
@@ -99,9 +99,9 @@ The essays describe *why* narrative engines need narrative engineering. The arti
 - [Narrative Immune Systems](./applications/narrative-immune-systems/) — information warfare, journalism, and the trust commons, analyzed through the immune analogy
 
 **[References](references/)** - Background reading
-- Dervin's Sense-Making Methodology
-- Second-Order Cybernetics (von Foerster, Bateson)
-- Deleuzian philosophy (becoming, difference, repetition)
+- [Dervin's Sense-Making Methodology](references/README.md#sense-making)
+- [Second-Order Cybernetics (von Foerster, Bateson)](references/README.md#cybernetics)
+- [Deleuzian philosophy (becoming, difference, repetition)](references/README.md#philosophy)
 - [Narrative Engineering](https://alexbo.land/essays/narrative_engineering_2023.html) (Alex Boland)
 
 **Agent Skills** — Slash commands available when working with an AI agent on this repo
