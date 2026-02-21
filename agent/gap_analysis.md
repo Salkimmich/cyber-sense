@@ -23,7 +23,7 @@ The following documents are listed in `essays/README.md` or `artifacts/README.md
 *   `cross-scenario-institutional-memory.md`: Cross-Scenario Learning as Institutional Memory — practical template in `artifacts/cross-scenario-learning.md`
 
 ### Essays (not yet written, no existing coverage)
-*   `when-methodology-fails.md`: When This Methodology Fails
+*   ~~`when-methodology-fails.md`: When This Methodology Fails~~ Done — `essays/when-methodology-fails.md`. Six failure modes (scope mismatch, character failure, hermeneutic circle persistence, editorial abdication, framing garbage-in, meta-circularity), each with mechanism, detection, and recovery. Scope map for practitioners. Self-application section.
 *   `formalization-problem.md`: The Formalization Problem
 *   `cognitive-overhead-diminishing-returns.md`: Cognitive Overhead and Diminishing Returns
 *   `narrative-computing-extended-mind.md`: Narrative Computing and the Extended Mind

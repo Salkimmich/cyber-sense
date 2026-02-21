@@ -42,6 +42,7 @@ If you're not convinced this is necessary:
 1. **[Why Narrative Engines Change Everything](./01-why-narrative-engines-change-everything.md)** - The problem space
 2. **[Stories All the Way Down](./stories-all-the-way-down.md)** - Concrete examples of narrative in action
 3. **[The Stochastic Imps of Happenstance](./the-stochastic-imps-of-happenstance.md)** - Why most failures are noise, not malice, and what that means
+4. **[When This Methodology Fails](./when-methodology-fails.md)** - Honest engineering assessment of failure modes and scope boundaries
 
 ### For Formalists (The Algebra)
 
@@ -328,11 +329,27 @@ These remain directions for future essays. The practical techniques are document
 - **Robert's Rules as Information-Theoretic Constraint** — Shannon meets parliamentary procedure. See [Robert's Rules as Forcing Functions](../artifacts/roberts-rules-forcing-function.md).
 - **Cross-Scenario Learning as Institutional Memory** — organizational learning theory meets AI collaboration. See [Cross-Scenario Learning](../artifacts/cross-scenario-learning.md).
 
+### [When This Methodology Fails](./when-methodology-fails.md)
+
+**The honest accounting**: Every methodology has a failure envelope. This essay maps cyberneutics' — six specific failure modes with mechanisms, detection heuristics, and recovery strategies.
+
+**Key insight**: The methodology fails most dangerously not when it crashes, but when it produces confident, well-scored, traceable answers to the wrong question. Formal machinery can make a bad framing look thoroughly analyzed.
+
+**Covers**:
+- Six failure modes: problem doesn't warrant it, characters don't deliver, evaluation loop doesn't escape hermeneutic circle, user abdicates editorial role, garbage in / sophisticated garbage out, meta-circularity trap
+- Detection heuristics for each failure mode
+- The scope map: when to use the full pipeline, the committee alone, a quick propensity check, or nothing
+- Robustness improvements
+- Self-application: how this essay itself could fail
+
+**Read this if**: You want to know whether the methodology is appropriate for your problem before investing time in it, or you want honest engineering assessment rather than marketing.
+
+---
+
 ## Future Directions
 
 Possible future essays, not yet written:
 
-- **When This Methodology Fails** — failure modes, edge cases, situations where this is the wrong tool
 - **Cognitive Overhead and Diminishing Returns** — when methodology becomes busywork, calibrating technique to problem complexity
 - **Narrative Computing and the Extended Mind** — connection to Clark & Chalmers; are LLMs tools or parts of a distributed cognitive system?
 
