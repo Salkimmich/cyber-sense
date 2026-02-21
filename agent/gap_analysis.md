@@ -26,7 +26,6 @@ The following documents are listed in `essays/README.md` or `artifacts/README.md
 *   `when-methodology-fails.md`: When This Methodology Fails
 *   `formalization-problem.md`: The Formalization Problem
 *   `cognitive-overhead-diminishing-returns.md`: Cognitive Overhead and Diminishing Returns
-*   `cybernetic-hermeneutics.md`: Cybernetic Hermeneutics: A New Discipline?
 *   `narrative-computing-extended-mind.md`: Narrative Computing and the Extended Mind
 *   `epistemology-collaborative-sensemaking.md`: The Epistemology of Collaborative Sense-Making
 

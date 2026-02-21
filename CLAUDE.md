@@ -28,9 +28,24 @@ Cyber-Sense is a methodology for working with LLMs as collaborative sense-making
 - `handoff-[YYYY-MM-DD].md` — most recent session handoff; **read this first at session start**
 - `roster.md` — committee character roster; read by the committee and review skills at invocation time
 - `deliberations/<topic-slug>/` — committee run records (00-charter through 04-evaluation); see `agent/deliberations/README.md` for schema
-- `diary/` — exploratory writing between sessions; read when you want recent thinking that hasn't made it into a document yet
+- `diary/` — exploratory writing between sessions; read when you want recent thinking that hasn't made it into a document yet. **Write to diary** for speculative or exploratory ideas mid-session that don't yet belong in a handoff; **write to handoff** for conclusions, decisions, and next steps.
 - `gap_analysis.md` — known gaps and planned documents
 - `archive/` — previous handoffs, completed plans; historical reference
+
+### `meta/` in more detail
+
+- `uptake-and-usage.md` — tracks which techniques have been validated and in what contexts
+- `methodology-evolution.md` — records how the methodology has changed over time and why
+- Read before major planning decisions or `/committee` runs about project direction; these files tell you what is settled vs. still being worked out.
+
+### `wild/` in more detail
+
+`wild/` holds incoming ideas and external material — talks, papers, adjacent projects — that haven't been integrated into the main methodology yet.
+
+- Each topic gets its own sub-directory (e.g., `wild/harness-engineering/`)
+- Each sub-directory contains at minimum a `README.md` (links, provenance, why it's interesting) and a `summary.md` (key takeaways, presenter/author info, relevant quotes)
+- **Intake convention**: when starting work on a `wild/` topic, read both files before drawing on the material
+- Don't treat `wild/` content as settled methodology — it's raw material for future essays or artifacts
 
 ## Available skills
 
@@ -64,7 +79,7 @@ For the committee pipeline formalized as a worked example, see `palgebra/committ
 
 ## Working style
 
-When collaborating with mg on this repository:
+When collaborating with mg (the repo's author) on this repository:
 
 - **Ask clarifying questions** when problem framing is ambiguous — the ambiguity is often what needs exploring
 - **Offer multiple approaches** rather than collapsing to one
